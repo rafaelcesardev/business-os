@@ -16,7 +16,7 @@ O plugin tem três entradas. Você pode começar sempre pelo BusinessOS; Marketi
 | [Marketing](skills/marketing/SKILL.md) | Ajuda a atrair clientes e apresentar a empresa com conteúdo, presença digital e anúncios | “Crie um carrossel com esta ideia e a nossa identidade.” |
 | [Comercial](skills/comercial/SKILL.md) | Organiza o processo de venda, atendimento e trabalho dos atendentes com IA | “Analise estas conversas e encontre os problemas no atendimento.” |
 
-**Marketing** reúne criação e revisão de textos, legendas, roteiros, posts, carrosséis e artes; planejamento de sites e landing pages; SEO, Google Business Profile e respostas a avaliações; campanhas para Google, Instagram e Facebook; análise de anúncios e relatórios.
+**Marketing** reúne criação e revisão do [manual da marca](skills/marketing/references/manual-da-marca.md), textos, legendas, roteiros, posts, carrosséis e artes; planejamento de sites e landing pages; SEO, Google Business Profile e respostas a avaliações; campanhas para Google, Instagram e Facebook; análise de anúncios e relatórios.
 
 **Comercial** ajuda a mapear etapas, responsáveis e gargalos, preparar propostas e acompanhamentos, analisar vendas e atendimento e criar, revisar ou testar instruções de atendentes com IA na plataforma escolhida pela empresa.
 
@@ -76,7 +76,7 @@ Abra a pasta da empresa no Codex ou Claude Code e chame `business-os`. Se ainda 
 Use o BusinessOS para organizar o contexto desta empresa. Aproveite os materiais que já existem nesta pasta, pergunte o que faltar e me ajude a escolher o próximo passo conforme meu objetivo.
 ```
 
-Com a base pronta, peça o trabalho diretamente: “Revise este texto com a nossa voz”, “Planeje uma página para este serviço” ou “Organize o processo entre o primeiro contato e o fechamento”.
+Com a base pronta, peça o trabalho diretamente: “Crie o manual completo da nossa marca”, “Revise este texto com a nossa voz”, “Planeje uma página para este serviço” ou “Organize o processo entre o primeiro contato e o fechamento”.
 
 Para uma empresa nova, o BusinessOS também prepara os arquivos de um plugin de contexto separado e um [README para aquela empresa](skills/business-os/modelo-readme.md), com instruções de uso e instalação. Publicar, instalar e compartilhar esse contexto são etapas separadas da preparação.
 

@@ -25,7 +25,7 @@ Leia `RESUMO.md` primeiro e apenas os demais documentos necessários. Um plugin 
 | Saber se uma entrega ou mudança trouxe o resultado esperado | [Conferir resultados](references/conferir-resultados.md) |
 | Organizar arquivos, Git ou trabalho local | [Organização do negócio](organizacao.md) |
 | Preparar ou atualizar o plugin da empresa | [Plugin do negócio](references/gerar-plugin-negocio.md) |
-| Atrair clientes, divulgar, criar conteúdo, cuidar do site ou analisar campanhas | [Marketing](../marketing/SKILL.md) |
+| Criar o manual da marca, atrair clientes, divulgar, criar conteúdo, cuidar do site ou analisar campanhas | [Marketing](../marketing/SKILL.md) |
 | Vender, atender, acompanhar oportunidades, organizar processos ou planejar atendentes | [Comercial](../comercial/SKILL.md) |
 
 Marketing e Comercial são atalhos opcionais. Quem chamar apenas Business OS recebe o mesmo encaminhamento. Use também o contexto para reconhecer pedidos com os nomes antigos dos procedimentos; não exija o nome de uma skill.

@@ -1,6 +1,6 @@
 ---
 name: marketing
-description: "Ajuda uma empresa a atrair clientes e se apresentar: textos, posts, carrosséis, vídeos, site, presença no Google, anúncios e análise de campanhas. Use para criar ou revisar materiais de divulgação, melhorar a presença digital ou entender resultados de marketing; identifica o procedimento pelo objetivo sem exigir termos técnicos."
+description: "Ajuda uma empresa a atrair clientes e se apresentar: manual da marca, textos, posts, carrosséis, vídeos, site, presença no Google, anúncios e análise de campanhas. Use para criar ou revisar o manual da marca e materiais de divulgação, melhorar a presença digital ou entender resultados de marketing; identifica o procedimento pelo objetivo sem exigir termos técnicos."
 ---
 
 # Marketing
@@ -17,6 +17,7 @@ Escolha pelo resultado pedido, sem perguntar qual procedimento o usuário quer. 
 
 | Pedido | Carregar quando necessário |
 | --- | --- |
+| Criar ou revisar o manual da marca, de identidade visual ou de identidade verbal | [Manual da marca](references/manual-da-marca.md) |
 | Criar texto, legenda, título ou pesquisar ganchos | [Escrever copy](references/escrever-copy.md) |
 | Melhorar texto existente ou só um trecho | [Revisar copy](references/revisar-copy.md) |
 | Roteiro de vídeo curto, cenas e fala | [Roteiro](references/roteiro-reels.md) |
