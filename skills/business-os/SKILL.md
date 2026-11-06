@@ -1,6 +1,6 @@
 ---
 name: business-os
-description: "Organiza e usa o contexto de uma empresa própria ou cliente. Use para começar um negócio, aproveitar materiais, consultar ou atualizar informações, organizar a pasta, preparar o plugin de contexto ou decidir o próximo passo. Também recebe pedidos em linguagem natural e encaminha para Marketing ou Comercial sem exigir que o usuário escolha um método."
+description: "Organiza e usa o contexto de uma empresa própria ou cliente. Use para começar um negócio, aproveitar materiais, consultar ou atualizar informações, organizar a pasta, preparar o plugin de contexto, revisar prioridades, retomar trabalhos ou conferir resultados. Também recebe pedidos em linguagem natural e encaminha para Marketing ou Comercial sem exigir que o usuário escolha um método."
 ---
 
 # BusinessOS
@@ -20,6 +20,9 @@ Leia `RESUMO.md` primeiro e apenas os demais documentos necessários. Um plugin 
 | Montar o contexto de um negócio | [Criar contexto](criar.md): aproveitar materiais e perguntar só o que falta |
 | Acrescentar ou corrigir informações | [Alimentar contexto](alimentar.md): preservar fontes e resolver conflitos |
 | Consultar informações ou trabalhar numa decisão | [Usar o contexto](usar.md) |
+| Revisar o período, prioridades, compromissos ou bloqueios | [Revisar o negócio](references/revisar-negocio.md) |
+| Registrar andamento ou continuar de onde parou | [Continuar trabalho](references/continuar-trabalho.md) |
+| Saber se uma entrega ou mudança trouxe o resultado esperado | [Conferir resultados](references/conferir-resultados.md) |
 | Organizar arquivos, Git ou trabalho local | [Organização do negócio](organizacao.md) |
 | Preparar ou atualizar o plugin da empresa | [Plugin do negócio](references/gerar-plugin-negocio.md) |
 | Atrair clientes, divulgar, criar conteúdo, cuidar do site ou analisar campanhas | [Marketing](../marketing/SKILL.md) |
@@ -34,6 +37,8 @@ E-mail e análise de dados são recursos compartilhados, sem entradas adicionais
 Carregue somente a área e os procedimentos necessários. Um pedido de título não exige planejar a campanha; um relatório não autoriza editar anúncios; um processo não exige criar um agente de IA. Em pedidos que cruzam áreas, encadeie as etapas necessárias sem fazer o usuário navegar entre skills.
 
 Se o usuário perguntar por onde começar, use `momento.md`, as lacunas e as capacidades atuais para recomendar de um a três próximos passos, com o motivo. Não imponha a mesma sequência a toda empresa.
+
+Em trabalhos continuados, consulte a fonte de andamento indicada em `momento.md` antes de replanejar. Registre a etapa verificada e a próxima ação quando precisar preservar continuidade. Se o pedido incluir acompanhamento, combine como e quando conferir o resultado. Esses procedimentos são compartilhados com Marketing e Comercial; um pedido simples não exige iniciar uma rotina de gestão.
 
 Quando a tarefa estiver autorizada, execute-a e pergunte apenas por decisões ou informações que realmente faltam. Criar arquivos locais, publicar, instalar plugins, enviar mensagens e configurar serviços são ações distintas: a escolha de uma área não autoriza as demais ações.
 

@@ -46,6 +46,8 @@ As referências são procedimentos, não novas skills a escolher. Leia apenas as
 
 Use provas reais e a identidade do negócio. Separe referência observada, hipótese de teste e resultado medido. Para tendências ou capacidades atuais de plataformas, pesquise fontes reais; não invente métricas ou atribua resultados sem evidência.
 
-Salve na pasta da peça, campanha ou site, conforme a [organização](../business-os/organizacao.md). Preserve as verificações de leitura, renderização e arquivos dos procedimentos. Informe o que foi produzido e o que foi efetivamente testado.
+Quando houver arquivo a entregar, salve na pasta da peça, campanha ou site, conforme a [organização](../business-os/organizacao.md). Um pedido simples de título ou frase pode terminar no chat, respeitando a quantidade pedida, sem arquivo ou relatório não solicitado. Preserve as verificações de leitura, renderização e arquivos dos procedimentos. Informe o que foi produzido e o que foi efetivamente testado.
+
+Para retomar ou preservar trabalho continuado, use [continuar trabalho](../business-os/references/continuar-trabalho.md). Quando o pedido incluir acompanhamento de uma campanha, site ou outra ação, use [conferir resultados](../business-os/references/conferir-resultados.md): peça entregue, publicação e resultado observado são verificações distintas. Uma revisão de prioridades do período usa [revisar o negócio](../business-os/references/revisar-negocio.md), no escopo de marketing solicitado.
 
 Analisar anúncios não autoriza modificar campanhas, orçamento ou conta. Preparar textos e materiais não equivale a enviar mensagens, publicar posts ou fazer deploy. Siga a autorização existente para cada ação.

@@ -38,3 +38,5 @@ Rascunhos, revisões e resultados de testes ficam em `atendimento/`. Processos e
 Planejar, testar e implantar são ações distintas. Não envie mensagens, configure serviços ou publique um atendente apenas por ter preparado as instruções. Quando a implantação estiver autorizada, confira as capacidades reais da plataforma e siga o procedimento correspondente.
 
 Informe o que foi entregue, o que foi executado e o que permanece sem teste. Sem acesso ao motor real, entregue instruções e cenários, sem declarar que o atendimento está validado em produção.
+
+Para retomar ou preservar trabalho continuado, use [continuar trabalho](../business-os/references/continuar-trabalho.md), mantendo o CRM ou controle existente como fonte. Quando o pedido incluir acompanhamento de um processo ou atendente, use [conferir resultados](../business-os/references/conferir-resultados.md), além dos testes específicos. Uma revisão de prioridades do período usa [revisar o negócio](../business-os/references/revisar-negocio.md), no escopo comercial solicitado.

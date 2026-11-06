@@ -29,7 +29,7 @@ Extraia o mecanismo: pergunta do público, demonstração, situação reconhecí
 
 Apresente a ideia e o benefício que o leitor precisa entender antes de listar a ferramenta ou o serviço. Use a voz e as palavras do público registradas no contexto. Diga concretamente o que acontece e o que a pessoa pode fazer.
 
-Para um título ou gancho, apresente até três caminhos realmente diferentes e indique o recomendado com o motivo. A curiosidade precisa ser respondida no conteúdo. Não use depoimento em primeira pessoa, número, promessa ou escassez sem fonte.
+Para um título ou gancho, respeite a quantidade pedida: se o usuário pedir só um, entregue um, sem alternativas ou justificativa não solicitada. Sem quantidade definida, apresente até três caminhos realmente diferentes e indique o recomendado com o motivo. A curiosidade precisa ser respondida no conteúdo. Não use depoimento em primeira pessoa, número, promessa ou escassez sem fonte.
 
 Escreva a peça completa no formato pedido: slides, fala, texto de anúncio ou seções do site. Em conteúdo educativo, entregue algo que o leitor consiga compreender ou aplicar antes do convite comercial. Use uma ação final coerente com o objetivo.
 
@@ -37,6 +37,6 @@ Escreva a peça completa no formato pedido: slides, fala, texto de anúncio ou s
 
 Aplique [revisar-copy](revisar-copy.md) em modo rápido: clareza, relevância, provas, próximo passo e linguagem natural. Preserve as restrições do formato sem transformar cada frase em um slogan.
 
-Salve na pasta da peça, na área de marketing ou no projeto do site, nunca dentro do contexto. Inclua as fontes usadas, o motivo das mudanças relevantes e lacunas. Para carrossel ou post, prepare também a legenda e encaminhe ao procedimento [carrossel](carrossel.md) quando a produção visual estiver no pedido.
+Um pedido simples de título ou frase pode terminar no chat; não crie arquivo sem pedido de salvar ou trabalho em arquivo já existente. Quando houver arquivo a entregar, salve na pasta da peça, na área de marketing ou no projeto do site, nunca dentro do contexto. Inclua as fontes usadas, o motivo das mudanças relevantes e lacunas. Para carrossel ou post, prepare também a legenda e encaminhe ao procedimento [carrossel](carrossel.md) quando a produção visual estiver no pedido.
 
 Novos aprendizados do próprio negócio podem voltar ao histórico e ao contexto. Uma ideia de teste não se torna uma afirmação pública só porque foi escrita.

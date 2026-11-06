@@ -30,6 +30,8 @@ churrascaria-do-jonas/
     .claude-plugin/plugin.json         compatibilidade Claude Code
     skills/contexto/SKILL.md           consulta aos mesmos arquivos acima
   site/                               código versionado
+  planejamento/                       andamento e planos locais, se usados
+  analises/                           revisões e conferências locais, se usadas
   marketing/                          produção local
   atendimento/
     processos/                        rascunhos locais
@@ -47,7 +49,7 @@ Os sete documentos do contexto continuam existindo; as subpastas os complementam
 | `.business-os/`, exceto `fontes/` | Base revisada: fatos, lacunas, identidade, decisões, referências leves, processos e instruções aprovados |
 | `site/` | Código, recursos necessários e configuração; dependências, caches e builds ficam fora |
 | Catálogos e arquivos da raiz | Metadados do plugin e orientação para trabalhar com o repositório |
-| `marketing/`, `atendimento/`, `entregas/`, `tmp/` | Trabalho local; não versionar vídeos, renders, carrosséis, projetos de produção ou ZIPs |
+| `planejamento/`, `analises/`, `marketing/`, `atendimento/`, `entregas/`, `tmp/` | Trabalho local; não versionar andamento, análises operacionais, vídeos, renders, carrosséis, projetos de produção ou ZIPs |
 
 Aplique estas regras na `.gitignore` da raiz, preservando as demais regras existentes:
 
@@ -56,6 +58,8 @@ Aplique estas regras na `.gitignore` da raiz, preservando as demais regras exist
 /atendimento/
 /entregas/
 /tmp/
+/planejamento/
+/analises/
 /.business-os/fontes/
 **/node_modules/
 **/dist/
@@ -80,6 +84,8 @@ No Cloudflare, a raiz do projeto de site e os caminhos que disparam build são c
 A identidade e as escolhas visuais ficam em `marca.md`. Registre o repertório durável em `referencias/`: URL, autor, o que aproveitar, limites de uso e, quando adequado, um arquivo leve. Acervos completos, downloads e vídeos de referência ficam em `marketing/referencias/`; o contexto aponta para o acervo sem duplicá-lo. Uma referência externa não vira uma regra ou afirmação factual da empresa.
 
 Rascunhos de processos, prompts, simulações e logs ficam em `atendimento/`. Quando o responsável aprovar uma versão, promova o documento para `.business-os/processos/<processo>.md` ou `.business-os/agentes/<nome>/`, registre a decisão no histórico e atualize os caminhos no resumo e nos consumidores. A aprovação do texto não comprova implantação ou teste no CRM. O documento aprovado é a fonte principal; não mantenha duas cópias editadas em paralelo. Ao revisá-lo, mantenha a versão aprovada até a substituição ser aprovada.
+
+Para [continuidade](references/continuar-trabalho.md), reutilize a fonte de andamento existente. Sem uma, use `planejamento/andamento.md`; [revisões](references/revisar-negocio.md) e [conferências de resultado](references/conferir-resultados.md) usam a área existente ou `analises/`. São registros locais com backup separado. Em `momento.md`, guarde somente os apontadores necessários; decisões e aprendizados confirmados seguem para o contexto pelo procedimento [alimentar](alimentar.md). Não copie dados operacionais para o plugin de contexto por conveniência. Preserve caminhos e políticas de versionamento de projetos existentes; não mova nem retire arquivos do Git automaticamente.
 
 ## Uma fonte, dois usos
 

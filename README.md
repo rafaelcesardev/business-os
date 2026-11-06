@@ -12,7 +12,7 @@ O plugin tem três entradas. Você pode começar sempre pelo BusinessOS; Marketi
 
 | Entrada | O que faz | Exemplo de pedido |
 | --- | --- | --- |
-| [BusinessOS](skills/business-os/SKILL.md) | Organiza o contexto e os arquivos da empresa, atualiza informações e orienta o próximo passo | “Use estes materiais para organizar o contexto do meu negócio.” |
+| [BusinessOS](skills/business-os/SKILL.md) | Organiza o contexto, revisa prioridades, retoma trabalhos e acompanha resultados | “Revise a semana da empresa e me ajude a escolher o próximo passo.” |
 | [Marketing](skills/marketing/SKILL.md) | Ajuda a atrair clientes e apresentar a empresa com conteúdo, presença digital e anúncios | “Crie um carrossel com esta ideia e a nossa identidade.” |
 | [Comercial](skills/comercial/SKILL.md) | Organiza o processo de venda, atendimento e trabalho dos atendentes com IA | “Analise estas conversas e encontre os problemas no atendimento.” |
 
@@ -21,6 +21,8 @@ O plugin tem três entradas. Você pode começar sempre pelo BusinessOS; Marketi
 **Comercial** ajuda a mapear etapas, responsáveis e gargalos, preparar propostas e acompanhamentos, analisar vendas e atendimento e criar, revisar ou testar instruções de atendentes com IA na plataforma escolhida pela empresa.
 
 E-mails e análise de dados são recursos compartilhados. O objetivo do pedido determina como usá-los, sem exigir que você conheça os procedimentos internos.
+
+Para trabalho continuado, o BusinessOS consulta o andamento existente, registra o próximo passo e confere o que mudou antes de retomar. As revisões comparam compromissos e resultados com as evidências disponíveis. Uma entrega pode estar pronta enquanto seu efeito no negócio ainda aguarda dados. Veja as [fontes e escolhas desses procedimentos](skills/business-os/references/fundamentos-gestao.md).
 
 ## Para quem serve
 
@@ -84,6 +86,7 @@ Cada empresa tem seu próprio repositório e uma única base de contexto editáv
 
 - **`.business-os/`:** contexto revisado, referências, processos e instruções aprovados, versionados no Git.
 - **`site/`:** código e recursos do site, também versionados.
+- **`planejamento/` e `analises/`:** andamento, planos, revisões e análises locais, quando usados; fora do Git e com backup separado. Um CRM ou quadro existente continua sendo a fonte de trabalho.
 - **`marketing/`, `atendimento/`, `entregas/` e `tmp/`:** produção local, rascunhos, renders e pacotes gerados, fora do Git e com backup separado.
 
 A base `.business-os/` pode ser instalada como o plugin de contexto da empresa. O plugin BusinessOS continua sendo a fonte dos métodos. Veja os detalhes em [organização do negócio](skills/business-os/organizacao.md).
@@ -101,6 +104,8 @@ O exportador opcional do plugin de contexto usa a biblioteca padrão do Python. 
 ```sh
 python3 -m unittest discover -s tests -v
 ```
+
+Os [14 cenários de gestão](tests/cenarios-gestao.md) também têm um [executor para as CLIs reais](tests/avaliar_gestao.py), com empresas e serviços fictícios. Veja os [resultados, correções e limites da validação](tests/validacao-gestao.md).
 
 ## Licença
 

@@ -19,6 +19,7 @@ Procurar `.business-os/` na pasta atual e nas pastas acima. A pasta que contém 
 | Site, landing page | todos |
 | Sistema, automação, atendimento, CRM | `negocio.md` (operação), `publico.md`, limites em `mensagem.md` e processos existentes de atendimento |
 | Proposta, planejamento, estratégia | `negocio.md`, `momento.md`, `historico.md` |
+| Retomar trabalho, revisar prioridades ou conferir resultados | `momento.md`, a fonte de andamento indicada e as evidências do trabalho |
 | Pergunta sobre o negócio | o arquivo do assunto |
 
 Na dúvida, ler mais. Os arquivos são curtos e cada um evita uma suposição.
@@ -40,5 +41,6 @@ Listar o que a tarefa precisa e o contexto não tem. Perguntar só o que muda o 
 ### Passo 5 — Devolver ao contexto
 
 Ao terminar:
+- Se houver continuidade ou acompanhamento solicitado, registre o estado na fonte de trabalho conforme [continuar trabalho](references/continuar-trabalho.md); para avaliar o efeito da entrega, use [conferir resultados](references/conferir-resultados.md). Não confunda andamento com contexto aprovado.
 - Se a conversa trouxe informação nova sobre o negócio (decisão, preço, público, resultado), oferecer guardar seguindo [alimentar.md](alimentar.md).
 - Se a entrega é relevante (site no ar, campanha lançada, proposta enviada), oferecer registrar em `historico.md`.

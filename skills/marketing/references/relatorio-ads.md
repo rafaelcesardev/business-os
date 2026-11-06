@@ -44,6 +44,8 @@ Adapte a profundidade ao pedido. Os passos abaixo orientam um relatório complet
 
 Use os campos disponíveis, mesmo quando o usuário fornecer um resumo em vez das colunas da plataforma. Identifique o evento medido: lead, mensagem, agendamento ou venda. Calcule custo por lead quando houver leads; CPA de cliente e retorno sobre vendas exigem dados de aquisição ou receita. Vendas não informadas são desconhecidas, não zero. Não some eventos diferentes nem trate a soma dos canais como clientes únicos sem deduplicação. Sem dados de resultado, avise e analise somente o tráfego.
 
+Preserve as definições na interpretação e nas recomendações conforme a [análise compartilhada](../../business-os/references/analisar-dados.md): cliques não comprovam contatos recebidos, e a queda depois do clique não identifica sozinha qual parte causou o problema.
+
 ### Passo 2 — Comparar com a semana anterior
 
 Buscar em `marketing/campanhas/relatorios/` o relatório anterior. Se existir, calcular variação semana vs semana:
@@ -89,14 +91,14 @@ Pra cada canal, listar:
 **Bottom criativos** (Meta): pra trocar ou pausar
 **Palavras-chave com mais custo e zero conversão** (Google) — virar negativas
 
-**Diagnóstico de criativo pelo funil** (Meta). Antes de mandar trocar um criativo, achar a parte que falhou. Cada etapa aponta uma peça diferente:
+**Diagnóstico de criativo pelo funil** (Meta). Antes de mandar trocar um criativo, investigar a etapa que mudou. A tabela orienta hipóteses, sem identificar a causa por uma métrica isolada:
 
-| Etapa | Métrica | Fraca quer dizer | O que mexer |
+| Etapa | Métrica | O que investigar (hipótese) | Ajuste a testar após confirmar |
 | --- | --- | --- | --- |
 | Parar | Reproduções de 3s ÷ impressões | O visual dos primeiros 3 segundos não para o dedo | Só a abertura: novo visual e texto na tela, o resto igual ([roteiro-reels](roteiro-reels.md)) |
 | Ficar | ThruPlays (ou até 50%) ÷ reproduções de 3s | A ponte, dos 3 aos 15 segundos, não continua o gancho | Os segundos 3 a 15, não o gancho |
 | Clicar | CTR (cliques no link) | A promessa, a prova ou o CTA no meio do anúncio | Texto principal, título e CTA ([revisar-copy](revisar-copy.md)) |
-| Converter | Custo por resultado, conversão depois do clique | O destino não continua o anúncio: página, formulário ou WhatsApp | A página ([planejar-site](planejar-site.md)) ou o atendimento, não o criativo |
+| Converter | Custo por resultado, conversão depois do clique | Desalinhamento entre promessa, público, destino ou atendimento | A parte sustentada pelo diagnóstico: anúncio, público, página ([planejar-site](planejar-site.md)) ou atendimento |
 
 Imagem não tem as duas primeiras etapas: começar pelo CTR.
 
@@ -116,7 +118,7 @@ Varrer os dados e gerar alertas em vermelho/amarelo:
 | 🟡 Frequência alta (Meta) | Conjunto com freq > 3.0 — público saturado |
 | 🟡 Conv. rate baixa | <1% em campanha Search |
 | 🟡 CPC subindo | CPC médio +20% vs semana anterior |
-| 🟡 Clica e não converte | CTR acima da média da conta e custo por resultado acima da meta → problema no destino, não no criativo |
+| 🟡 Clica e não converte | CTR acima da média da conta e custo por resultado acima da meta → investigar promessa, público, destino e atendimento, sem causa definida por essas taxas |
 | 🟢 Oportunidade | Campanha com CTR/conv acima da média + orçamento limitado → considerar aumentar |
 
 ### Passo 6 — Recomendações pra semana

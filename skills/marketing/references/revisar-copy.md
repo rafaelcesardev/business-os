@@ -101,7 +101,7 @@ Antes de entregar, **teste do deixar quieto:** olhar cada mudança e perguntar s
 - [FALTA: <prova> — libera "<promessa>"]
 ```
 
-Pedido de título ou gancho: entregar 3 opções de **tipos diferentes** (cena, dor + saída, número, pergunta que o público digita no Google, prova primeiro), não três jeitos de dizer a mesma coisa, e indicar a recomendada.
+Pedido de título ou gancho: respeitar a quantidade solicitada; se pedir só um, entregar um, sem alternativas ou relatório não solicitado. Sem quantidade definida, entregar até 3 opções de **tipos diferentes** (cena, dor + saída, número, pergunta que o público digita no Google, prova primeiro), não três jeitos de dizer a mesma coisa, e indicar a recomendada.
 
 ### Chamada por outro procedimento (modo rápido)
 
