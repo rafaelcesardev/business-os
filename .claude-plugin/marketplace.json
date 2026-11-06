@@ -1,0 +1,15 @@
+{
+  "name": "business-os",
+  "description": "Plugin business-os.",
+  "owner": {
+    "name": "Rafael César",
+    "url": "https://github.com/rafaelcesardev"
+  },
+  "plugins": [
+    {
+      "name": "business-os",
+      "source": "./",
+      "description": "Contexto, Marketing e Comercial em três entradas para gerenciar negócios próprios e de clientes."
+    }
+  ]
+}

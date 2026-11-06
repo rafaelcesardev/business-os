@@ -1,0 +1,12 @@
+{
+  "nome": "empresa-exemplo",
+  "titulo": "Empresa Exemplo",
+  "versao": "0.1.0",
+  "arquivos": [
+    "RESUMO.md",
+    "negocio.md",
+    "publico.md",
+    "mensagem.md",
+    "marca.md"
+  ]
+}

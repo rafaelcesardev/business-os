@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "business-os",
+  "version": "0.5.2",
+  "description": "Contexto, Marketing e Comercial em três entradas para gerenciar negócios próprios e de clientes.",
+  "author": {
+    "name": "Rafael César",
+    "url": "https://github.com/rafaelcesardev"
+  },
+  "repository": "https://github.com/rafaelcesardev/business-os",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "BusinessOS",
+        "shortDescription": "Contexto, Marketing e Comercial",
+        "developerName": "Rafael César",
+        "logo": "./skills/business-os/assets/logo.svg",
+        "composerIcon": "./skills/business-os/assets/logo.svg"
+      }
+    }
+  }
+}

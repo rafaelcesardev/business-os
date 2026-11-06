@@ -1,0 +1,24 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+
+# Claude Code (sessões locais)
+.claude/
+
+# Dependências
+node_modules/
+
+# Temporários
+*.log
+*.tmp
+
+# Cache dos testes Python
+__pycache__/
+*.pyc
+
+# Estudos locais de identidade visual
+/assets/branding/estudos/

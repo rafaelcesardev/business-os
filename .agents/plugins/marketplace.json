@@ -1,0 +1,14 @@
+{
+  "name": "business-os",
+  "interface": {
+    "displayName": "BusinessOS"
+  },
+  "plugins": [
+    {
+      "name": "business-os",
+      "source": {"source": "local", "path": "./"},
+      "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+      "category": "Productivity"
+    }
+  ]
+}
