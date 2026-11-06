@@ -102,10 +102,6 @@ O exportador opcional do plugin de contexto usa a biblioteca padrão do Python. 
 python3 -m unittest discover -s tests -v
 ```
 
-## Créditos
-
-Os métodos de processo comercial e atendentes vieram do repositório de skills da Adsolutioon.
-
 ## Licença
 
 [MIT](LICENSE).
