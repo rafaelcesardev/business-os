@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from avaliar_gestao import cases, mcp, models_from_events
+from avaliar_gestao import cases, mcp, models_from_calls, models_from_events, prepare_plugin
 
 
 class AvaliarGestaoTests(unittest.TestCase):
@@ -41,3 +41,18 @@ class AvaliarGestaoTests(unittest.TestCase):
             self.assertIn("Escrita negada", responses[1]["result"]["content"][0]["text"])
             self.assertEqual(len(log.read_text().splitlines()), 2)
             self.assertEqual(state.read_text(), original)
+
+    def test_modelo_do_codex_vem_das_chamadas_mcp(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            log = Path(temporary) / "chamadas.jsonl"
+            self.assertEqual(models_from_calls(log), [])
+            log.write_text(json.dumps({"_meta": {"x-codex-turn-metadata": {"model": "modelo-ficticio"}}}) + "\n"
+                           + json.dumps({"name": "consultar_servico"}) + "\n")
+            self.assertEqual(models_from_calls(log), ["modelo-ficticio"])
+
+    def test_copia_do_plugin_nao_expoe_gabarito(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            plugin = Path(temporary) / "plugin"
+            prepare_plugin(plugin)
+            self.assertTrue((plugin / "skills/business-os/SKILL.md").exists())
+            self.assertFalse((plugin / "tests").exists())

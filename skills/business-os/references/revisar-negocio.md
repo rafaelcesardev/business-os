@@ -13,7 +13,7 @@ Identifique objetivo, período com datas e fuso pertinente, responsável e fonte
 - Compare os compromissos anteriores com evidências datadas: entrega, aceite, publicação ou evento registrado. Estado atual e data de edição não provam que o trabalho avançou neste período.
 - Carregue pendências e bloqueios ainda abertos, mesmo sem atualização recente. Diferencie o que é novo do que continua pendente.
 - Confira as medidas ligadas ao objetivo conforme [conferir resultados](conferir-resultados.md). Separe entrega concluída, uso real e resultado observado.
-- Registre fontes inacessíveis e conflitos. Ausência de acesso ou de registro não significa zero, atraso ou conclusão. Relato do responsável é fonte identificada, sem apresentá-lo como medição independente.
+- Registre fontes inacessíveis e conflitos. Ausência de acesso ou de registro não significa zero, atraso ou conclusão. Com uma fonte inacessível, não afirme que uma pendência é a única nem que não há outras. Relato do responsável é fonte identificada, sem apresentá-lo como medição independente.
 
 ## 3. Decidir onde agir
 

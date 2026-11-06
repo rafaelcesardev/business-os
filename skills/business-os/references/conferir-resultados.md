@@ -24,7 +24,7 @@ Verifique o que foi executado e quando. Um arquivo pronto, um material aprovado 
 
 Leia as fontes antes de calcular. Use a [análise compartilhada](analisar-dados.md) quando houver dados a examinar. Confira se períodos, definição e população são comparáveis. Não transforme ausência de dado em zero. Sem base confiável, registre a primeira observação; sem meta, não classifique como meta atingida. Se a base for zero, informe a diferença absoluta, sem calcular crescimento percentual sobre zero.
 
-Mantenha o evento medido na interpretação: dobrar cliques não comprova dobrar contatos ou carga de atendimento. Sem dados da etapa intermediária, registre a lacuna e investigue, sem apresentar uma hipótese como volume observado.
+Mantenha o evento medido na interpretação e nas palavras: escreva “cliques”, não “pessoas”, “gente” ou “contatos”. Dobrar cliques não comprova dobrar contatos, pessoas alcançadas ou carga de atendimento, nem que os contatos ficaram iguais. Sem dados da etapa intermediária, registre a lacuna e investigue, sem apresentar uma hipótese como volume observado.
 
 Registre mudanças simultâneas, problemas de coleta e efeitos indesejados relevantes. Um aumento após uma ação é uma observação; atribuir o aumento à ação exige evidência adicional. Não declare significância estatística ou tendência sustentada a partir de uma observação isolada.
 
@@ -39,6 +39,6 @@ Entregue, com as fontes e datas:
 
 Uma entrega pode estar concluída enquanto o resultado permanece sem dados ou aguardando o prazo combinado. Registre essa diferença no [andamento](continuar-trabalho.md), sem reabrir a produção nem afirmar sucesso do negócio. Preserve resultados desfavoráveis; não selecione apenas evidências positivas.
 
-Salve a conferência junto ao trabalho ou na área de análises existente, quando solicitado. Leve resultados e decisões confirmados ao contexto pelo procedimento [alimentar](../alimentar.md). Uma hipótese promissora não vira depoimento, prova comercial ou regra aprovada. Recomendar um ajuste não autoriza alterar serviços, publicar ou gastar.
+Salve a conferência junto ao trabalho ou na área de análises existente, quando solicitado. Para levar resultados e decisões confirmados à base `.business-os/`, ofereça a atualização pelo procedimento [alimentar](../alimentar.md) e aplique-a somente se o pedido incluir atualizar o contexto. Registrar o resultado no andamento ou na análise não autoriza editar a base revisada. Uma hipótese promissora não vira depoimento, prova comercial ou regra aprovada. Recomendar um ajuste não autoriza alterar serviços, publicar ou gastar.
 
 Um pedido para registrar o resultado e propor o próximo teste não aprova interromper ou substituir a versão atual. Um resultado desfavorável pode fundamentar essa recomendação, mas não registre a suspensão como decisão tomada nem revogue um estado aprovado sem autorização para isso.

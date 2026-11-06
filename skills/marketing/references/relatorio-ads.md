@@ -13,7 +13,7 @@ Se não houver `.business-os/` nem contexto fornecido por um plugin da empresa, 
 ## Dependências
 
 - **Contexto:** `.business-os/negocio.md`, `.business-os/historico.md` (campanhas lançadas e aprendizados)
-- **Metas:** `.business-os/momento.md` (orçamento, CPA ou custo por contato alvo). Sem meta registrada, perguntar uma vez e oferecer guardar com o `business-os`
+- **Metas:** `.business-os/momento.md` (orçamento, CPA ou custo por contato alvo). Sem meta registrada, perguntar uma vez na resposta ao usuário e oferecer guardar com o `business-os`; no relatório, registrar a meta como lacuna, sem afirmar que a pergunta foi feita
 - **Tom de voz e limites:** `.business-os/mensagem.md`
 - **Inputs:** CSVs do Google Ads e/ou Meta Ads Manager. Print também aceito (transcrever)
 - **Histórico:** `marketing/campanhas/relatorios/` (criar se não existir)
@@ -173,6 +173,6 @@ Se o relatório confirmou um aprendizado que se repete (criativo, público ou pa
 - **Comparação é o que importa.** Número solto ("R$ 1.200 essa semana") não significa nada sem o comparativo.
 - **Alertas em ordem.** Vermelho primeiro, amarelo depois, verde por último.
 - **Recomendações concretas.** "Pausar Grupo X" > "Otimizar campanhas". Nome da campanha, valor, motivo.
-- **Linguagem do dono.** Seguir `.business-os/mensagem.md`. CPM, CTR, CPA são OK se o dono já entende; se não, traduzir pelo evento medido ("custo por mil pessoas que viram", "% de quem clicou", "quanto custou cada contato"). Só usar "cliente" quando houver aquisição medida.
+- **Linguagem do dono.** Seguir `.business-os/mensagem.md`. CPM, CTR, CPA são OK se o dono já entende; se não, traduzir pelo evento medido ("custo por mil exibições", "% das exibições que viraram clique", "quanto custou cada contato"). Só usar "cliente" quando houver aquisição medida.
 - **Alertas são hipóteses de diagnóstico.** Frequência e taxas isoladas não provam saturação nem a causa da queda. Interprete os limiares da tabela com o objetivo, período, tamanho do público, volume e histórico disponíveis; sem contexto suficiente, registre a limitação.
 - **Quando reportar perda:** descreva o dado observado sem inventar a conclusão. "A campanha X gastou R$ 200 e não registrou leads" só cabe se houver medição de leads; ausência de dados de vendas não prova que não houve venda.

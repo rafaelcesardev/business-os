@@ -11,7 +11,7 @@ O usuário descreve o que precisa. Encontre o contexto, aproveite o que já exis
 
 Siga [contexto do negócio](contexto.md): procure `.business-os/` na pasta atual e acima; sem resultado, procure até três níveis abaixo. Havendo mais de uma empresa e nenhuma indicação suficiente, pergunte qual.
 
-Leia `RESUMO.md` primeiro e apenas os demais documentos necessários. Um plugin da empresa também pode fornecer contexto; identifique a versão consultada. Para atualizar a fonte principal, localize o repositório, sem editar o cache instalado nem criar uma base paralela.
+Leia `RESUMO.md` primeiro e apenas os demais documentos necessários. Liste também a pasta do negócio fora de `.business-os/` para achar dados, notas e registros da tarefa; não afirme que um registro falta sem procurá-lo. Um plugin da empresa também pode fornecer contexto; identifique a versão consultada. Para atualizar a fonte principal, localize o repositório, sem editar o cache instalado nem criar uma base paralela.
 
 ## 2. Reconheça a finalidade
 

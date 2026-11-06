@@ -96,7 +96,22 @@ def models_from_events(events):
                    if isinstance(e.get("message"), dict) and e["message"].get("model")})
 
 
-def run_case(destination, platform, number, plugin):
+def models_from_calls(path):
+    """O JSON do Codex não traz o modelo; o _meta das chamadas MCP traz."""
+    if not path.exists():
+        return []
+    return sorted({json.loads(line).get("_meta", {}).get("x-codex-turn-metadata", {}).get("model")
+                   for line in path.read_text().splitlines() if line.strip()} - {None})
+
+
+def prepare_plugin(plugin):
+    # O gabarito (tests/cenarios-gestao.md) fica fora da cópia: o Claude lê a pasta via --add-dir.
+    for path in ["skills", ".claude-plugin", ".codex-plugin"]:
+        shutil.copytree(ROOT / path, plugin / path)
+    shutil.copy2(ROOT / "plugin.json", plugin / "plugin.json")
+
+
+def run_case(destination, platform, number, plugin, claude_model="sonnet"):
     folder = destination / platform / f"caso-{number:02}"
     if folder.exists():
         raise ValueError(f"Execução já existe: {folder}; use outra pasta para preservar a evidência")
@@ -132,7 +147,7 @@ def run_case(destination, platform, number, plugin):
     else:
         config = folder / "mcp.json"
         write(config, json.dumps({"mcpServers": {"fixture": server}}))
-        command = ["claude", "--print", "--output-format", "stream-json", "--verbose", "--no-session-persistence", "--model", "opus", "--setting-sources", "", "--settings", '{"disableAllHooks":true,"autoMemoryEnabled":false}', "--strict-mcp-config", "--mcp-config", str(config), "--restricted", "--tools", "Read,Edit,Write,Glob,Grep,Skill", "--allowedTools", "Read,Edit,Write,Glob,Grep,Skill,mcp__fixture__*", "--permission-mode", "acceptEdits", "--permission-prompts", "none", "--plugin-dir", str(plugin), "--add-dir", str(plugin)]
+        command = ["claude", "--print", "--output-format", "stream-json", "--verbose", "--no-session-persistence", "--model", claude_model, "--setting-sources", "", "--settings", '{"disableAllHooks":true,"autoMemoryEnabled":false}', "--strict-mcp-config", "--mcp-config", str(config), "--restricted", "--tools", "Read,Edit,Write,Glob,Grep,Skill", "--allowedTools", "Read,Edit,Write,Glob,Grep,Skill,mcp__fixture__*", "--permission-mode", "acceptEdits", "--permission-prompts", "none", "--plugin-dir", str(plugin), "--add-dir", str(plugin)]
         full_prompt = "Use o plugin BusinessOS local. " + prompt
     write(folder / "prompt-enviado.txt", full_prompt)
     write(folder / "comando.json", json.dumps(command, ensure_ascii=False, indent=2))
@@ -156,7 +171,8 @@ def run_case(destination, platform, number, plugin):
         results = [e.get("result", "") for e in events if e.get("type") == "result"]
         write(folder / "resposta.md", "\n".join(results))
     metadata = {"plataforma": platform, "caso": number, "retorno": code, "segundos": round(time.monotonic()-start, 1), "arquivos_alterados": changed,
-                "modelos": models_from_events(events), "antes": before, "depois": after}
+                "modelos": models_from_events(events) or models_from_calls(calls_file),
+                "modelo_solicitado": command[command.index("--model") + 1], "antes": before, "depois": after}
     write(folder / "execucao.json", json.dumps(metadata, ensure_ascii=False, indent=2))
     print(json.dumps({k:v for k,v in metadata.items() if k not in {"antes", "depois"}}, ensure_ascii=False), flush=True)
     return metadata
@@ -170,6 +186,7 @@ def main():
     parser.add_argument("destino", type=Path)
     parser.add_argument("--casos", type=int, nargs="+", default=list(cases()))
     parser.add_argument("--plataformas", nargs="+", choices=["codex", "claude"], default=["codex", "claude"])
+    parser.add_argument("--modelo-claude", default="sonnet", help="alias ou ID do modelo do Claude Code executor")
     args = parser.parse_args()
     destination = args.destino.expanduser().resolve()
     if destination.is_relative_to(ROOT) or any(n not in cases() for n in args.casos):
@@ -177,13 +194,9 @@ def main():
     destination.mkdir(parents=True, exist_ok=True)
     plugin = destination / "plugin"
     if not plugin.exists():
-        for path in ["skills", ".claude-plugin", ".codex-plugin"]:
-            shutil.copytree(ROOT / path, plugin / path)
-        shutil.copy2(ROOT / "plugin.json", plugin / "plugin.json")
-        (plugin / "tests").mkdir()
-        shutil.copy2(ROOT / "tests/cenarios-gestao.md", plugin / "tests/cenarios-gestao.md")
+        prepare_plugin(plugin)
     with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
-        futures = [executor.submit(run_case, destination, p, n, plugin) for n in args.casos for p in args.plataformas]
+        futures = [executor.submit(run_case, destination, p, n, plugin, args.modelo_claude) for n in args.casos for p in args.plataformas]
         for future in concurrent.futures.as_completed(futures):
             future.result()
 

@@ -4,7 +4,7 @@ Use quando houver trabalho continuado, uma interrupção ou um pedido para conti
 
 ## Uma fonte de andamento
 
-Encontre o negócio pelo [contexto compartilhado](../contexto.md). Leia `RESUMO.md`, `momento.md` e o caminho de acompanhamento registrado. Se o trabalho já estiver num CRM, quadro, documento ou sistema, use essa fonte. Sem acesso de escrita, entregue a atualização proposta; não inaugure um controle concorrente. Sem fonte existente, use `planejamento/andamento.md` na pasta do negócio, somente quando precisar salvar continuidade.
+Encontre o negócio pelo [contexto compartilhado](../contexto.md). Leia `RESUMO.md`, `momento.md` e o caminho de acompanhamento registrado. Se o trabalho já estiver num CRM, quadro, documento ou sistema, use essa fonte. Sem acesso de escrita, entregue a atualização proposta na resposta e informe que a fonte não foi atualizada. Não salve o ponto de retomada em outro arquivo nem inaugure um controle concorrente; um arquivo com a proposta só cabe se o usuário pedir esse arquivo. Sem fonte existente, use `planejamento/andamento.md` na pasta do negócio, somente quando precisar salvar continuidade.
 
 Registre em `momento.md` o apontador para o acompanhamento quando a atualização do contexto estiver autorizada, seguindo [alimentar contexto](../alimentar.md). Não copie todo o quadro para a base. Um plugin instalado pode conter somente o apontador de sua versão, não o estado atual.
 
@@ -17,7 +17,7 @@ Guarde apenas o necessário para outra sessão continuar:
 ```markdown
 ## Trabalho: <título existente>
 Observado em: <data e fuso quando necessário>
-Objetivo e escopo combinado: <resultado esperado e limites>
+Objetivo e escopo combinado: <resultado esperado e limites registrados; condições novas entram como propostas>
 Fonte principal e arquivos: <registros e caminhos reais>
 Concluído e verificado: <etapa, evidência e data; lacunas explícitas>
 Estado atual: <situação observada e decisões com sua origem>
@@ -26,7 +26,7 @@ Pendências: <bloqueios, de quem depende e condição de retomada>
 Resultado a conferir: <medida e momento combinado, quando pertinente>
 ```
 
-Não preencha campos desconhecidos com nomes, datas ou aprovações plausíveis. Distinga combinado de proposto. Registre ações externas realizadas, ainda não executadas e de resultado incerto para evitar repetição. Não inclua credenciais ou conversas brutas; mantenha os materiais nas áreas próprias e cite sua origem. A [organização](../organizacao.md) define versionamento e backup.
+Não preencha campos desconhecidos com nomes, datas ou aprovações plausíveis. Distinga combinado de proposto: uma tarefa nova só recebe responsável quando foi combinada com ele ou com quem decide; sugerir quem poderia fazê-la fica marcado como proposta. Registre ações externas realizadas, ainda não executadas e de resultado incerto para evitar repetição. Não inclua credenciais ou conversas brutas; mantenha os materiais nas áreas próprias e cite sua origem. A [organização](../organizacao.md) define versionamento e backup.
 
 Só afirme que uma ação anterior não foi executada quando a fonte confirmar isso. Sem registro, use “não comprovado”: uma próxima ação como obter um material não prova que ninguém já o solicitou. Você pode informar as ações que não realizou nesta sessão, sem estender essa afirmação ao histórico de outras pessoas.
 

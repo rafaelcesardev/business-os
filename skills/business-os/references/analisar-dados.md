@@ -31,7 +31,7 @@ Ler o arquivo fornecido. Se for Excel (.xlsx), ler com as ferramentas disponíve
 
 ### Passo 3 — Análise
 
-Preserve o significado de cada indicador também na explicação e nas recomendações. Cliques não são contatos, contatos não são pedidos e pedidos não são clientes únicos sem essa definição na fonte. Não estime o volume de uma etapa a partir de outra sem dados que liguem as duas; uma possível explicação continua como hipótese, sem números ou eventos intermediários inventados.
+Preserve o significado de cada indicador também na explicação e nas recomendações. Cliques não são contatos, cliques e impressões não são pessoas alcançadas, contatos não são pedidos e pedidos não são clientes únicos sem essa definição na fonte. Não estime o volume de uma etapa a partir de outra sem dados que liguem as duas; uma possível explicação continua como hipótese, sem números ou eventos intermediários inventados.
 
 Identificar e reportar:
 
