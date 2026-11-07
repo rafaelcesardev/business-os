@@ -20,7 +20,7 @@ Uma boa capa oferece um motivo para continuar. Nas páginas internas, uma ideia 
 
 ## 2. Plano visual
 
-Defina para cada página a ideia principal, a imagem que a explica, a hierarquia do texto e os planos. Escolha o número de slides pelo conteúdo e pelo formato pedido, sem completar uma quantidade arbitrária.
+Defina para cada página a ideia principal, a imagem que a explica, a hierarquia do texto e os planos: o que fica no fundo, atrás do texto, no mesmo plano e na frente, e o que é HTML ou imagem gerada, conforme [composição em HTML](composicao-html.md#distribuir-o-trabalho). Imagem e texto se integram em camadas; uma imagem colocada ao lado de um bloco de texto não é composição. Escolha o número de slides pelo conteúdo e pelo formato pedido, sem completar uma quantidade arbitrária.
 
 Uma metáfora visual precisa ter vínculo legível com a copy. Escala, montagem, repetição, cor e interação entre objetos podem tornar a ideia concreta. Uma página tipográfica também pode fazer parte da mesma série.
 
