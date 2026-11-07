@@ -22,7 +22,7 @@ Uma boa capa oferece um motivo para continuar. Nas páginas internas, uma ideia 
 
 Defina para cada página a ideia principal, a imagem que a explica, a hierarquia do texto e os planos: o que fica no fundo, atrás do texto, no mesmo plano e na frente, e o que é HTML ou imagem gerada, conforme [composição em HTML](composicao-html.md#distribuir-o-trabalho). Imagem e texto se integram em camadas; uma imagem colocada ao lado de um bloco de texto não é composição. Escolha o número de slides pelo conteúdo e pelo formato pedido, sem completar uma quantidade arbitrária.
 
-Uma metáfora visual precisa ter vínculo legível com a copy. Escala, montagem, repetição, cor e interação entre objetos podem tornar a ideia concreta. Uma página tipográfica também pode fazer parte da mesma série.
+Uma metáfora visual precisa ter vínculo legível com a copy. O ideal é o par em que frase e imagem se completam, definido junto com a copy ([escrever-copy](escrever-copy.md#3-escrever)); se a copy aprovada não permitir esse par na capa, proponha o título ajustado para aprovação em vez de só ilustrar o texto. Escala, montagem, repetição, cor e interação entre objetos podem tornar a ideia concreta. Uma página tipográfica também pode fazer parte da mesma série.
 
 Mantenha identidade entre as páginas, variando a composição conforme o conteúdo. Não force alternância de fundos, ilustração em toda página ou um layout fixo para todas as marcas.
 

@@ -31,6 +31,8 @@ Apresente a ideia e o benefício que o leitor precisa entender antes de listar a
 
 Para um título ou gancho, respeite a quantidade pedida: se o usuário pedir só um, entregue um, sem alternativas ou justificativa não solicitada. Sem quantidade definida, apresente até três caminhos realmente diferentes e indique o recomendado com o motivo. A curiosidade precisa ser respondida no conteúdo. Não use depoimento em primeira pessoa, número, promessa ou escassez sem fonte.
 
+**Em peça visual (post, carrossel, anúncio, capa de reels), frase e imagem nascem juntas.** Escreva o título já com o objeto ou a cena que vai completá-lo, para que um precise do outro: a imagem não ilustra a frase, ela fecha o sentido. Exemplos do recurso: "Relaxa, tá tudo sob controle" com uma tecla Ctrl gigante; "Em caso de marketing sem resultado, quebre o vidro" dentro de uma caixa de emergência com um telefone; "Seja a escolha óbvia" num cartaz sobre a única cadeira verde entre cadeiras pretas. Use trocadilho, expressão popular, objeto do cotidiano ou situação reconhecível. Entregue cada título em par: **frase + objeto/cena + por que um completa o outro**. Frases curtas no slide; a explicação longa vai para a legenda ou para uma página interna.
+
 Escreva a peça completa no formato pedido: slides, fala, texto de anúncio ou seções do site. Em conteúdo educativo, entregue algo que o leitor consiga compreender ou aplicar antes do convite comercial. Use uma ação final coerente com o objetivo.
 
 ## 4. Revisar e entregar
