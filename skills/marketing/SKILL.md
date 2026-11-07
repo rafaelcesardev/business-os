@@ -18,6 +18,7 @@ Escolha pelo resultado pedido, sem perguntar qual procedimento o usuário quer. 
 | Pedido | Carregar quando necessário |
 | --- | --- |
 | Criar ou revisar o manual da marca, de identidade visual ou de identidade verbal | [Manual da marca](references/manual-da-marca.md) |
+| Pesquisar referências que funcionam (posts, carrosséis, reels, anúncios) e montar acervo para criar | [Pesquisar referências](references/pesquisar-referencias.md) |
 | Criar texto, legenda, título ou pesquisar ganchos | [Escrever copy](references/escrever-copy.md) |
 | Melhorar texto existente ou só um trecho | [Revisar copy](references/revisar-copy.md) |
 | Roteiro de vídeo curto, cenas e fala | [Roteiro](references/roteiro-reels.md) |
