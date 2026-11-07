@@ -50,3 +50,5 @@ Nos modelos de texto (frase de impacto, número em destaque, pergunta frequente,
 ```
 
 *Modelos adaptados do static-ad-templates e do awareness-headlines de [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) (MIT), reescritos pra negócio local.*
+
+Post único e capa de reels são o formato próprio da imagem conceitual chamativa, em par com a frase (ver [escrever-copy](escrever-copy.md#3-escrever)). Em carrossel, essa intensidade fica na capa e no CTA; o meio é focado no texto ([carrossel](carrossel.md)).

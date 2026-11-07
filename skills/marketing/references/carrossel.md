@@ -16,6 +16,8 @@ Defina objetivo, público, formato e ação esperada a partir do pedido. Se a co
 
 Leia as referências visuais como conjuntos: capa, desenvolvimento e fecho têm papéis diferentes. Identifique hierarquia, contraste, enquadramento, profundidade e variação entre páginas. Separe o que foi observado de uma preferência confirmada pelo dono. A referência orienta uma composição original, não a cópia de marcas, rostos ou textos de terceiros.
 
+**Onde vai o impacto visual.** A imagem chamativa (objeto ou metáfora que prende a atenção) é para a **capa** e, se fizer sentido, para o **CTA final**, como nova chamada. O **desenvolvimento (problema e solução) é focado no texto**: sem objeto central ou chamativo; no máximo um detalhe discreto nas bordas, um eco pequeno da capa ou só tipografia com respiro. Imagem forte em todas as páginas distrai de quem está lendo a explicação. Post único e capa de reels são os formatos que levam a imagem chamativa inteira.
+
 Uma boa capa oferece um motivo para continuar. Nas páginas internas, uma ideia por vez e a quantidade de detalhe que ajuda a mensagem. Escolha a intensidade visual conforme a direção da marca e o papel de cada página; não sobrecarregue todas para dar impacto.
 
 ## 2. Plano visual
