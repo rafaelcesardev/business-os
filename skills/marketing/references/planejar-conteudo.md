@@ -12,11 +12,11 @@ Defina de 3 a 5 assuntos que o público quer aprender ou resolver e que se ligam
 
 | Tipo | Para quê | CTA | Proporção de partida |
 | --- | --- | --- | --- |
-| **Valor** (ensina, alerta, mostra como fazer) | Seguidores, salvamentos, compartilhamentos | Salvar, seguir, comentar, enviar a alguém | Cerca de 70% |
+| **Valor** (ensina, alerta, mostra como fazer) | Seguidores, salvamentos, compartilhamentos e contato de quem tem o problema | Salvar ou seguir, e no fim um convite leve: quem quiser resolver isso com a empresa, chama | Cerca de 70% |
 | **Autoridade** (bastidor, processo, caso real, opinião sobre o mercado) | Confiança na empresa | Seguir, conversar | Cerca de 20% |
 | **Oferta** (serviço, preço, como contratar) | Contato comercial | WhatsApp ou link | Cerca de 10% |
 
-A proporção é ponto de partida; ajuste pelos resultados próprios. Conteúdo de valor pode ter uma assinatura leve da empresa no último slide, sem virar anúncio. Não esconda uma oferta disfarçada de conteúdo de valor.
+A proporção é ponto de partida; ajuste pelos resultados próprios. O conteúdo de valor resolve ou explica um problema real e fecha com um CTA que liga esse problema ao serviço ("se quiser que a gente cuide disso pra você, chama no WhatsApp"), sem virar anúncio no meio da peça. Não esconda uma oferta disfarçada de conteúdo de valor.
 
 ## 3. Pauta
 
