@@ -14,11 +14,12 @@ Decida elemento por elemento, antes de produzir, o que é HTML e o que é imagem
 | Objeto principal, cena, material, luz, reflexo, sombra no chão | Imagem gerada | Volume e realismo que CSS não produz |
 | Objeto que fica na frente do texto, cobrindo parte dele | Imagem gerada em recorte com transparência real, acima da camada de texto | Dá profundidade sem perder o texto editável |
 | Texto com efeito material: vidro, metal, neon, gelo, relevo, texto impresso ou gravado na superfície de um objeto, texto deformado pela perspectiva | Imagem gerada, com a frase exata no prompt | O efeito depende de luz e material; em HTML fica falso |
-| Palavra gigante de fundo que o objeto atravessa | HTML (tipografia da marca) atrás do recorte; imagem gerada só se a palavra precisar de efeito material | Mantém a fonte da marca e a leitura |
+| Palavra gigante de fundo que o objeto atravessa | HTML (tipografia da marca) atrás do recorte; imagem gerada só se a palavra precisar de efeito material | Recurso pontual, não padrão: no máximo uma peça da série, e só se a palavra continuar legível com o objeto na frente |
 
 Regras:
 
 - Mínimo de elementos. Uma ideia, um objeto principal, fundo limpo. O que distrai sai.
+- Sobreposição não pode apagar a leitura: se o objeto cobre tanto a palavra que não dá para entender o que está escrito, reduza a sobreposição ou tire a palavra.
 - Texto gerado em imagem: copie a frase literal, curta, no prompt; abra o resultado e confira letra por letra, acentos inclusos. Se errar, gere de novo ou passe esse texto para HTML.
 - Para sobreposição (objeto à frente de parte do texto), gere o objeto já pensando no espaço do texto: posição, escala e área livre descritas no prompt, e recorte com transparência.
 - Exportação: navegador renderiza cada slide na dimensão final e salva o PNG. O HTML e os arquivos de imagem permanecem como fonte editável.
