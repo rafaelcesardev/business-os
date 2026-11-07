@@ -13,7 +13,7 @@ Decida elemento por elemento, antes de produzir, o que é HTML e o que é imagem
 | Fundo liso ou com textura sutil (branco, preto, cinza da marca) | HTML ou imagem simples | Controle de cor e respiro |
 | Objeto principal, cena, material, luz, reflexo, sombra no chão | Imagem gerada | Volume e realismo que CSS não produz |
 | Objeto que fica na frente do texto, cobrindo parte dele | Imagem gerada em recorte com transparência real, acima da camada de texto | Dá profundidade sem perder o texto editável |
-| Texto com efeito material: vidro, metal, neon, gelo, relevo, texto impresso ou gravado na superfície de um objeto, texto deformado pela perspectiva | Imagem gerada, com a frase exata no prompt | O efeito depende de luz e material; em HTML fica falso |
+| Texto com efeito material: vidro, metal, neon, gelo, relevo, texto impresso ou gravado na superfície de um objeto, texto deformado pela perspectiva | Imagem gerada, com a frase exata no prompt | O efeito depende de luz, refração e material; SVG/CSS servem a efeitos gráficos, não a materiais realistas |
 | Palavra gigante de fundo que o objeto atravessa | HTML (tipografia da marca) atrás do recorte; imagem gerada só se a palavra precisar de efeito material | Recurso pontual, não padrão: no máximo uma peça da série, e só se a palavra continuar legível com o objeto na frente |
 
 Regras:
@@ -23,6 +23,8 @@ Regras:
 - Texto gerado em imagem: copie a frase literal, curta, no prompt; abra o resultado e confira letra por letra, acentos inclusos. Se errar, gere de novo ou passe esse texto para HTML.
 - Para sobreposição (objeto à frente de parte do texto), gere o objeto já pensando no espaço do texto: posição, escala e área livre descritas no prompt, e recorte com transparência.
 - Exportação: navegador renderiza cada slide na dimensão final e salva o PNG. O HTML e os arquivos de imagem permanecem como fonte editável.
+
+Montagens mínimas: fundo → texto plano → recorte → copy e marca; ou cena integrada (objeto, palavra material e chão gerados juntos) → copy e marca. Transparência resolve recorte e oclusão, não refração: se o vidro precisa distorcer algo atrás dele, gere os dois na mesma cena.
 
 O efeito tridimensional pode vir de uma imagem com volume e de como ela se relaciona com as outras camadas; não exige criar um motor 3D.
 

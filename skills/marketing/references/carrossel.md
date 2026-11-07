@@ -28,11 +28,13 @@ Uma metáfora visual precisa ter vínculo legível com a copy. O ideal é o par 
 
 Mantenha identidade entre as páginas, variando a composição conforme o conteúdo. Não force alternância de fundos, ilustração em toda página ou um layout fixo para todas as marcas.
 
-## 3. Produção híbrida
+## 3. Produção por camadas
 
 O fluxo padrão combina [gerar-midia](gerar-midia.md) para objetos, recortes e cenas com [composição em HTML](composicao-html.md) para copy, marca, máscaras, sobreposições e exportação. Use outro editor quando o usuário escolher ou o projeto já exigir esse formato.
 
-Peça os elementos gerados sem copy ou logo. Para recortes, preserve transparência real. Texto e marca ficam em camadas editáveis. Aparência tridimensional pode vir do material e da iluminação da imagem; não exige criar um sistema 3D.
+Classifique cada página antes de gerar: **tipográfica** (só texto, padrão do meio do carrossel), **objeto com texto plano** (objeto gerado, texto em HTML) ou **cena com palavra material** (objeto e palavra curta gerados juntos, com luz e material compartilhados; demais textos em HTML). Peça os elementos gerados sem logo e sem copy informativa; só uma palavra curta que participa fisicamente da cena pode vir na imagem. Para recortes, preserve transparência real. Texto e marca ficam em camadas editáveis.
+
+Aprove a direção visual com a capa e uma página interna antes de produzir a série inteira; não gere todas para descobrir no fim que o material não funciona.
 
 Use os arquivos oficiais da marca e as versões adequadas ao fundo. Paleta, tipografia, arredondamento, textura e efeitos vêm de `marca.md` e das referências do negócio. Exemplos de um cliente não viram regras para outro.
 

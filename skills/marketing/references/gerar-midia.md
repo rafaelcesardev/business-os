@@ -18,11 +18,17 @@ Respeite o escopo autorizado e as condições reais da ferramenta. Se houver um 
 
 ## Gerar para compor
 
-Em posts e carrosséis híbridos, gere o objeto, recorte ou cena sem copy e logo. O [carrossel](carrossel.md) controla o texto e a marca em HTML/CSS. Para um recorte, peça fundo transparente e preserve o canal alfa. Uma imagem com fundo sólido não é um recorte.
+Em posts e carrosséis híbridos, gere o objeto, recorte ou cena sem logo e sem copy informativa. Exceção: uma palavra curta que participa fisicamente da cena (gravada, de vidro, de metal) pode ser gerada junto, com a grafia literal no prompt e conferida no resultado. O [carrossel](carrossel.md) controla o texto e a marca em HTML/CSS. Para um recorte, peça fundo transparente e preserve o canal alfa. Uma imagem com fundo sólido não é um recorte.
 
 No prompt, identifique assunto, relação com a mensagem, material, luz, enquadramento, paleta, referências e área livre ou composição esperada. Descreva separadamente o papel de cada imagem fornecida. Não copie marcas, rostos ou alegações dos criadores das referências.
 
 Use a dimensão necessária à peça. Para vídeos, planeje cena, movimento, continuidade e áudio conforme o objetivo; não fixe duração ou formato universal.
+
+## Prompt e edição
+
+Organize o prompt em blocos: metáfora e papel na mensagem; papel de cada imagem de referência; objeto e materiais; câmera e luz; palavra cenográfica literal, se houver; áreas livres para o texto; itens proibidos. Na edição, parta da versão aprovada e peça uma mudança por vez. Registre entradas, versão e motivo de cada ajuste.
+
+Recortar vidro ou objeto transparente pode tirar o reflexo do fundo; se o reflexo faz parte do efeito, gere a cena completa em vez do recorte.
 
 ## Conferir
 

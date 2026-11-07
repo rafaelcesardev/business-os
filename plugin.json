@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "business-os",
-  "version": "0.7.3",
+  "version": "0.8.0",
   "description": "Contexto, Marketing e Comercial em três entradas para gerenciar negócios próprios e de clientes.",
   "author": {
     "name": "Rafael César",
