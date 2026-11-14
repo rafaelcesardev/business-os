@@ -1,19 +1,13 @@
 # SEO completo + GEO + Google Ads
 
-Para localizar a empresa e usar contexto local ou fornecido por um plugin, siga [contexto do negócio](../../business-os/contexto.md).
-
-## Contexto do negócio
-
-Procurar a pasta `.business-os/` na pasta atual e, se não estiver ali, nas pastas acima. A pasta que contém `.business-os/` é a **pasta do negócio**: caminhos de saída como `marketing/...` são relativos a ela (sem `.business-os/`, à pasta atual). Ler `.business-os/RESUMO.md` primeiro e depois os arquivos listados em Dependências.
-
-Se não houver `.business-os/` nem contexto fornecido por um plugin da empresa, avisar que o `business-os` monta o contexto e seguir com o que o usuário informar. Campo vazio é lacuna: perguntar, não inventar. Nada marcado `(hipótese)` ou `(a confirmar)` vira afirmação pública.
+Localize a empresa e siga as regras gerais do [Cérebro da empresa](../../cortex/contexto.md). Leia `RESUMO.md` primeiro e depois os arquivos listados em Dependências; os caminhos de saída partem da pasta da empresa.
 
 ## Dependências
 
-- **Público:** `.business-os/publico.md` (dores, objeções, frases reais)
-- **Negócio e oferta:** `.business-os/negocio.md`
-- **Tom de voz e limites:** `.business-os/mensagem.md`
-- **Estratégia atual:** `.business-os/momento.md`
+- **Público:** `cerebro/publico.md` (dores, objeções, frases reais)
+- **Negócio e oferta:** `cerebro/negocio.md`
+- **Tom de voz e limites:** `cerebro/mensagem.md`
+- **Estratégia atual:** `cerebro/momento.md`
 - **Ferramentas:** busca na web e leitura de páginas, nativas do ambiente (Claude Code e Codex têm)
 - **Outputs vão em:** `marketing/seo/`
 
@@ -25,7 +19,7 @@ Se não houver `.business-os/` nem contexto fornecido por um plugin da empresa, 
 
 **Objetivo:** Entender se existe demanda real e como as pessoas buscam.
 
-1. Ler `.business-os/negocio.md` (produtos/serviços, região, diferenciais) e `.business-os/publico.md` (quem compra e, em **Onde ela está**, o que pesquisa no Google)
+1. Ler `cerebro/negocio.md` (produtos/serviços, região, diferenciais) e `cerebro/publico.md` (quem compra e, em **Onde ela está**, o que pesquisa no Google)
 2. Gerar uma lista inicial de **30-50 termos-semente** baseados em:
    - Categorias de produto/serviço
    - Intenção de busca (informacional, comercial, transacional)
@@ -58,7 +52,7 @@ Se não houver `.business-os/` nem contexto fornecido por um plugin da empresa, 
    - **Top 5 resultados orgânicos:** quem são, que tipo de página (site institucional, marketplace, blog, diretório)
    - **Resultados do Maps/Local Pack:** quem aparece, quantas avaliações, nota
    - **Google Ads:** alguém anuncia? qual a copy?
-3. Pra cada concorrente relevante (máx 5-8, começando pelos da tabela **Concorrência** de `.business-os/mensagem.md`), **abrir o site** e analisar:
+3. Pra cada concorrente relevante (máx 5-8, começando pelos da tabela **Concorrência** de `cerebro/mensagem.md`), **abrir o site** e analisar:
    - Estrutura do site (páginas, blog, catálogo)
    - Meta titles e descriptions das páginas principais
    - Conteúdo: falam de quê? com que profundidade?
@@ -69,7 +63,7 @@ Se não houver `.business-os/` nem contexto fornecido por um plugin da empresa, 
    - **Oportunidades:** termos onde ninguém domina
    - **Ameaças:** concorrentes fortes demais pra competir de frente
    - **Benchmark:** o padrão mínimo que o negócio precisa atingir
-5. Concorrente novo ou informação nova sobre um conhecido: oferecer levar pra `.business-os/mensagem.md` com o `business-os`.
+5. Concorrente novo ou informação nova sobre um conhecido: oferecer levar pra `cerebro/mensagem.md` com o `cortex`.
 
 **Output:** `marketing/seo/02-analise-concorrencia.md` com:
 - Tabela de concorrentes
@@ -88,12 +82,12 @@ Se não houver `.business-os/` nem contexto fornecido por um plugin da empresa, 
    **Informações básicas:**
    - Nome (idêntico ao registrado)
    - Categoria principal + secundárias (sugerir as melhores pro nicho)
-   - Endereço, telefone, site, horário (de `.business-os/negocio.md`)
+   - Endereço, telefone, site, horário (de `cerebro/negocio.md`)
    - Área de atendimento
 
    **Descrição do negócio:**
    - Descrição otimizada (750 caracteres) com palavras-chave naturais
-   - Tom: conforme `.business-os/mensagem.md`
+   - Tom: conforme `cerebro/mensagem.md`
 
    **Atributos e serviços:**
    - Serviços relevantes
@@ -123,7 +117,7 @@ Se não houver `.business-os/` nem contexto fornecido por um plugin da empresa, 
 
 **Objetivo:** Garantir que cada página esteja otimizada pras palavras-chave certas.
 
-1. Ler a estrutura atual do site: projeto do site na pasta do negócio ou URL em **Presença** de `.business-os/negocio.md`; sem nenhum dos dois, perguntar as páginas
+1. Ler a estrutura atual do site: projeto do site na pasta do negócio ou URL em **Presença** de `cerebro/negocio.md`; sem nenhum dos dois, perguntar as páginas
 2. Pra cada página:
 
    **Mapeamento de palavras-chave por página**
@@ -273,7 +267,7 @@ Ao finalizar, apresentar **resumo executivo** com:
 ## Regras
 
 - Toda pesquisa deve ser real (busca na web e páginas abertas de verdade), nunca inventar dados de volume ou concorrência
-- Copies e textos seguem `.business-os/mensagem.md` estritamente
+- Copies e textos seguem `cerebro/mensagem.md` estritamente
 - Termos em português do Brasil, como o público busca
 - Quando um dado não puder ser obtido (ex: volume exato), deixar claro que é estimativa e explicar a lógica
 - Focar em termos com intenção comercial/transacional pra negócio B2C/B2B local

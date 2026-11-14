@@ -1,22 +1,16 @@
 # Revisão de copy
 
-Para localizar a empresa e usar contexto local ou fornecido por um plugin, siga [contexto do negócio](../../business-os/contexto.md).
+Localize a empresa e siga as regras gerais do [Cérebro da empresa](../../cortex/contexto.md). Leia `RESUMO.md` primeiro e depois os arquivos listados em Dependências; os caminhos de saída partem da pasta da empresa.
 
 Para criar a peça a partir de um briefing ou pesquisar referências e ganchos, use [escrever-copy](escrever-copy.md). Este procedimento preserva o foco na revisão de um texto existente.
 
 Pega um texto pronto (colado pelo usuário ou saído de outro procedimento) e devolve a versão que vende melhor, com o motivo de cada mudança. Não reescreve por gosto: cada mudança precisa de uma razão que caiba numa linha.
 
-## Contexto do negócio
-
-Procurar a pasta `.business-os/` na pasta atual e, se não estiver ali, nas pastas acima. A pasta que contém `.business-os/` é a **pasta do negócio**: caminhos de saída como `marketing/...` são relativos a ela (sem `.business-os/`, à pasta atual). Ler `.business-os/RESUMO.md` primeiro e depois os arquivos listados em Dependências.
-
-Se não houver `.business-os/` nem contexto fornecido por um plugin da empresa, avisar que o `business-os` monta o contexto e seguir com o que o usuário informar. Campo vazio é lacuna: perguntar, não inventar. Nada marcado `(hipótese)` ou `(a confirmar)` vira afirmação pública.
-
 ## Dependências
 
-- **Público:** `.business-os/publico.md` (quanto já sabe, dores, objeções, frases reais)
-- **Voz, provas, limites e concorrência:** `.business-os/mensagem.md`
-- **Oferta:** `.business-os/negocio.md`
+- **Público:** `cerebro/publico.md` (quanto já sabe, dores, objeções, frases reais)
+- **Voz, provas, limites e concorrência:** `cerebro/mensagem.md`
+- **Oferta:** `cerebro/negocio.md`
 - **Padrões de texto de IA:** [anti-ia.md](anti-ia.md)
 - **Outputs:** texto colado no chat volta no chat. Arquivo revisado é salvo ao lado do original como `<nome>-revisado.md`, sem apagar o original.
 

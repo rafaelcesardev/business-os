@@ -8,7 +8,7 @@ import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-gerar_plugin = runpy.run_path(str(ROOT / "skills/business-os/scripts/gerar_plugin.py"))["gerar_plugin"]
+gerar_plugin = runpy.run_path(str(ROOT / "skills/cortex/scripts/gerar_plugin.py"))["gerar_plugin"]
 
 
 class GerarPluginTests(unittest.TestCase):
@@ -16,7 +16,7 @@ class GerarPluginTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name) / "empresa"
-        self.context = self.root / ".business-os"
+        self.context = self.root / "cerebro"
         self.context.mkdir(parents=True)
         (self.context / "RESUMO.md").write_text("# Oficina Exemplo\n\nConserta bicicletas. Público: ciclistas da região.\n")
         (self.context / "negocio.md").write_text("# Negócio\n\nFaz manutenção de bicicletas.\n")
@@ -49,6 +49,11 @@ class GerarPluginTests(unittest.TestCase):
             self.assertFalse(any("fontes" in n or "compartilhar.json" in n for n in packed.namelist()))
         after = {f.name: f.read_bytes() for f in self.context.glob("*") if f.is_file()}
         self.assertEqual(before, after)
+
+    def test_pasta_legada_continua_aceita(self):
+        self.context.rename(self.root / ".business-os")
+        folder, _ = gerar_plugin(self.root)
+        self.assertTrue((folder / "skills/contexto/references/RESUMO.md").exists())
 
     def test_repeticao_idempotente_e_recupera_zip_ausente(self):
         folder, archive = gerar_plugin(self.root)
@@ -176,7 +181,7 @@ class GerarPluginTests(unittest.TestCase):
             gerar_plugin(self.root)
 
     def test_comando_completo_e_erro_sem_traceback(self):
-        command = [sys.executable, str(ROOT / "skills/business-os/scripts/gerar_plugin.py"), str(self.root)]
+        command = [sys.executable, str(ROOT / "skills/cortex/scripts/gerar_plugin.py"), str(self.root)]
         result = subprocess.run(command, capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn("ZIP:", result.stdout)

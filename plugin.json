@@ -1,22 +1,22 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "business-os",
-  "version": "0.9.1",
-  "description": "Contexto, Marketing e Comercial em três entradas para gerenciar negócios próprios e de clientes.",
+  "name": "cortex",
+  "version": "1.0.0",
+  "description": "Caixa de ferramentas que cria e opera o Cérebro de uma empresa, com métodos de marketing e comercial, para negócios próprios e de clientes.",
   "author": {
     "name": "Rafael César",
     "url": "https://github.com/rafaelcesardev"
   },
-  "repository": "https://github.com/rafaelcesardev/business-os",
+  "repository": "https://github.com/rafaelcesardev/cortex",
   "license": "MIT",
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "BusinessOS",
+        "displayName": "Cortex",
         "shortDescription": "Contexto, Marketing e Comercial",
         "developerName": "Rafael César",
-        "logo": "./skills/business-os/assets/logo.svg",
-        "composerIcon": "./skills/business-os/assets/logo.svg"
+        "logo": "./skills/cortex/assets/logo.svg",
+        "composerIcon": "./skills/cortex/assets/logo.svg"
       }
     }
   }

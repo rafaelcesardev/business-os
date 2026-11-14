@@ -1,10 +1,10 @@
 # Criar atendente com IA
 
-Para localizar a empresa e usar contexto local ou fornecido por um plugin, siga [contexto do negócio](../../business-os/contexto.md).
+Localize a empresa e siga as regras gerais do [Cérebro da empresa](../../cortex/contexto.md).
 
 ## Contexto e plataforma
 
-Localize a pasta do negócio como na skill [business-os](../../business-os/SKILL.md). Leia o contexto antes de entrevistar novamente, inclusive instruções aprovadas em `.business-os/agentes/<nome>/`. Salve rascunhos, revisões e resultados de testes em `atendimento/agentes/<nome>/`, local e ignorado pelo Git. Após aprovação, promova as instruções e bases para o contexto conforme a [organização](../../business-os/organizacao.md), mantendo uma única fonte principal. Reutilize documentos legados em `agentes/` sem movê-los automaticamente. Pergunte o CRM ou plataforma contratada e confira suas capacidades e documentação antes de preparar campos ou ferramentas. O método não pressupõe um fornecedor. Sem acesso ao motor real, entregue as instruções, a base e os cenários, identificando o que não foi executado; nunca declare testes aprovados sem rodá-los.
+Localize a pasta do negócio como na skill [cortex](../../cortex/SKILL.md). Leia o contexto antes de entrevistar novamente, inclusive instruções aprovadas em `cerebro/agentes/<nome>/`. Salve rascunhos, revisões e resultados de testes em `atendimento/agentes/<nome>/`, local e ignorado pelo Git. Após aprovação, promova as instruções e bases para o contexto conforme a [organização](../../cortex/organizacao.md), mantendo uma única fonte principal. Reutilize documentos legados em `agentes/` sem movê-los automaticamente. Pergunte o CRM ou plataforma contratada e confira suas capacidades e documentação antes de preparar campos ou ferramentas. O método não pressupõe um fornecedor. Sem acesso ao motor real, entregue as instruções, a base e os cenários, identificando o que não foi executado; nunca declare testes aprovados sem rodá-los.
 
 Um atendente bom faz a pergunta certa, responde o que perguntaram, leva a conversa para a etapa final e não inventa. Quase toda resposta ruim vem de uma de cinco causas: falta o fato, a regra não existe, a regra é vaga, duas regras brigam, ou o modelo ignora a regra às vezes. Este procedimento acha a causa e corrige na camada certa, e só considera pronto o que passou nos testes.
 
@@ -18,7 +18,7 @@ Diga em uma linha qual modo vai seguir e por quê. Na dúvida entre criar e revi
 
 ## 1. Junte o material
 
-- **O processo:** fonte aprovada em `.business-os/processos/`, ou rascunho identificado em `atendimento/processos/`, gerado pelo procedimento [mapear-processo-comercial](mapear-processo-comercial.md). Sem processo não há etapa final, e sem etapa final não há como saber se uma resposta avança. Se não existir, mapeie antes, ou pelo menos defina etapa final, serviços, regra de preço e gatilhos de passagem para uma pessoa.
+- **O processo:** fonte aprovada em `cerebro/processos/`, ou rascunho identificado em `atendimento/processos/`, gerado pelo procedimento [mapear-processo-comercial](mapear-processo-comercial.md). Sem processo não há etapa final, e sem etapa final não há como saber se uma resposta avança. Se não existir, mapeie antes, ou pelo menos defina etapa final, serviços, regra de preço e gatilhos de passagem para uma pessoa.
 - **A base de conhecimento:** preços, condições, perguntas frequentes.
 - **O prompt atual**, se houver.
 - **Conversas reais**, se houver. São a melhor fonte: mostram como os clientes escrevem e onde o agente erra. No modo revisar, são obrigatórias; peça à pessoa ou leia na plataforma.
@@ -72,7 +72,7 @@ Salve na raiz do negócio:
 - `atendimento/agentes/<nome>/testes.md`: cenários, rodadas, resultado e, no modo revisar, a causa e a correção de cada falha.
 - Se a base mudou: `atendimento/agentes/<nome>/base.md`, uma pergunta por item.
 
-Quando o responsável aprovar, promova `prompt.md`, `base.md` e `respostas-fixas.md` pertinentes para `.business-os/agentes/<nome>/`, registre a versão e atualize as referências. Cenários aprovados podem acompanhar esse contexto; conversas brutas, resultados de execução e logs continuam locais. Não substitua a versão aprovada por uma revisão ainda em teste e não confunda aprovação do texto com publicação no CRM.
+Quando o responsável aprovar, promova `prompt.md`, `base.md` e `respostas-fixas.md` pertinentes para `cerebro/agentes/<nome>/`, registre a versão e atualize as referências. Cenários aprovados podem acompanhar esse contexto; conversas brutas, resultados de execução e logs continuam locais. Não substitua a versão aprovada por uma revisão ainda em teste e não confunda aprovação do texto com publicação no CRM.
 
 Responda com o que mudou e por quê, o placar dos testes (quantos cenários passaram em todas as rodadas), o que falhou e ficou pendente, e o próximo passo. **Publicar é decisão da pessoa:** prepare a versão e o teste, e só publique quando ela disser. Depois de publicar, sugira acompanhar as primeiras conversas reais e voltar com o modo revisar.
 

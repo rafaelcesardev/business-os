@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254" role="img" aria-labelledby="title">
+  <title id="title">Cortex</title>
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b202e"/>
+      <stop offset="0.45" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#060912"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.46" cy="0.42" r="0.5">
+      <stop offset="0" stop-color="#19e6ff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#19e6ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ink" gradientUnits="userSpaceOnUse" x1="340" y1="300" x2="940" y2="980">
+      <stop offset="0" stop-color="#7dfbff"/>
+      <stop offset="0.3" stop-color="#19f0ff"/>
+      <stop offset="0.62" stop-color="#00b4ff"/>
+      <stop offset="1" stop-color="#0a5cff"/>
+    </linearGradient>
+  </defs>
+  <rect x="120" y="134" width="995" height="995" rx="246" fill="url(#tile)"/>
+  <rect x="120" y="134" width="995" height="995" rx="246" fill="url(#glow)"/>
+  <!-- O C de fora é o córtex; a dobra e o núcleo são o Cérebro que ele envolve. -->
+  <g fill="none" stroke="url(#ink)" stroke-linecap="round">
+    <path d="M 861.6 417.0 A 308 308 0 1 0 861.6 845.0" stroke-width="98"/>
+    <path d="M 517.7 504.4 A 176 176 0 1 1 517.7 757.6" stroke-width="84"/>
+  </g>
+  <circle cx="640" cy="631" r="74" fill="url(#ink)"/>
+</svg>

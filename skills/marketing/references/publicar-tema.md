@@ -1,24 +1,18 @@
 # Pipeline de conteúdo SEO + redes sociais
 
-Para localizar a empresa e usar contexto local ou fornecido por um plugin, siga [contexto do negócio](../../business-os/contexto.md).
+Localize a empresa e siga as regras gerais do [Cérebro da empresa](../../cortex/contexto.md). Leia `RESUMO.md` primeiro e depois os arquivos listados em Dependências; os caminhos de saída partem da pasta da empresa.
 
 Skill orquestradora. Pega um tema → entrega artigo no blog + carrossel + 3 legendas (Insta, FB, LinkedIn), tudo conectado.
 
-## Contexto do negócio
-
-Procurar a pasta `.business-os/` na pasta atual e, se não estiver ali, nas pastas acima. A pasta que contém `.business-os/` é a **pasta do negócio**: caminhos de saída como `marketing/...` são relativos a ela (sem `.business-os/`, à pasta atual). Ler `.business-os/RESUMO.md` primeiro e depois os arquivos listados em Dependências.
-
-Se não houver `.business-os/` nem contexto fornecido por um plugin da empresa, avisar que o `business-os` monta o contexto e seguir com o que o usuário informar. Campo vazio é lacuna: perguntar, não inventar. Nada marcado `(hipótese)` ou `(a confirmar)` vira afirmação pública.
-
 ## Dependências
 
-- **Público:** `.business-os/publico.md` (dores, objeções, frases reais)
+- **Público:** `cerebro/publico.md` (dores, objeções, frases reais)
 - **Estratégia de conteúdo:** `marketing/seo/05-estrategia-conteudo.md` (lista mestra de temas, criada pelo [seo](seo.md))
 - **Outras pesquisas SEO:** `marketing/seo/01-pesquisa-demanda.md`, `02-analise-concorrencia.md`, `08-geo-otimizacao-ia.md`
 - **Skill carrossel:** [carrossel](carrossel.md) deste plugin — usar pra fase do carrossel
 - **Site (blog):** projeto do site dentro da pasta do negócio, se houver (ver Passo 2). Se não tiver site, perguntar antes
-- **Tom de voz e limites:** `.business-os/mensagem.md`
-- **Contexto:** `.business-os/negocio.md`, `.business-os/marca.md`
+- **Tom de voz e limites:** `cerebro/mensagem.md`
+- **Contexto:** `cerebro/negocio.md`, `cerebro/marca.md`
 
 ---
 
@@ -32,7 +26,7 @@ Se não passou nada → ler `marketing/seo/05-estrategia-conteudo.md`, listar os
 
 > "Qual tema da estratégia? (lista de opções)"
 
-Sem estratégia do [seo](seo.md), sugerir 3 a 5 temas a partir das dores, objeções e perguntas de `.business-os/publico.md`, priorizando o que serve ao objetivo de `.business-os/momento.md`.
+Sem estratégia do [seo](seo.md), sugerir 3 a 5 temas a partir das dores, objeções e perguntas de `cerebro/publico.md`, priorizando o que serve ao objetivo de `cerebro/momento.md`.
 
 Marcar mentalmente quais já viraram blog (checar pasta do blog) pra não duplicar.
 
@@ -81,9 +75,9 @@ draft: true
 3. **H2 prático:** como fazer / o que olhar
 4. **H2 comparativo ou de detalhe técnico** (opcional)
 5. **H2 onde a empresa se encaixa:** conexão natural com o produto, sem ser propaganda
-6. **CTA final:** link WhatsApp / formulário / contato de `.business-os/negocio.md`
+6. **CTA final:** link WhatsApp / formulário / contato de `cerebro/negocio.md`
 
-**Regras de escrita** (seguir Voz e Limites de `.business-os/mensagem.md` estritamente):
+**Regras de escrita** (seguir Voz e Limites de `cerebro/mensagem.md` estritamente):
 - Sem jargão de marketing/inglês quando o público não usa
 - Lead e títulos com as palavras do público: usar as **Frases reais** de `publico.md`
 - Frases curtas, parágrafos de 2-4 linhas

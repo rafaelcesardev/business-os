@@ -1,20 +1,14 @@
 # Estrutura de campanha Google Ads
 
-Para localizar a empresa e usar contexto local ou fornecido por um plugin, siga [contexto do negócio](../../business-os/contexto.md).
+Localize a empresa e siga as regras gerais do [Cérebro da empresa](../../cortex/contexto.md). Leia `RESUMO.md` primeiro e depois os arquivos listados em Dependências; os caminhos de saída partem da pasta da empresa.
 
 Skill que monta a campanha inteira em CSV pronto pra importar no Google Ads Editor. Sai do briefing direto pro CSV — sem montar grupo por grupo na mão na interface do Google.
 
-## Contexto do negócio
-
-Procurar a pasta `.business-os/` na pasta atual e, se não estiver ali, nas pastas acima. A pasta que contém `.business-os/` é a **pasta do negócio**: caminhos de saída como `marketing/...` são relativos a ela (sem `.business-os/`, à pasta atual). Ler `.business-os/RESUMO.md` primeiro e depois os arquivos listados em Dependências.
-
-Se não houver `.business-os/` nem contexto fornecido por um plugin da empresa, avisar que o `business-os` monta o contexto e seguir com o que o usuário informar. Campo vazio é lacuna: perguntar, não inventar. Nada marcado `(hipótese)` ou `(a confirmar)` vira afirmação pública.
-
 ## Dependências
 
-- **Público:** `.business-os/publico.md` (dores, objeções, frases reais)
-- **Negócio e oferta:** `.business-os/negocio.md` (produto/serviço, público, região, diferenciais)
-- **Tom de voz e limites:** `.business-os/mensagem.md`
+- **Público:** `cerebro/publico.md` (dores, objeções, frases reais)
+- **Negócio e oferta:** `cerebro/negocio.md` (produto/serviço, público, região, diferenciais)
+- **Tom de voz e limites:** `cerebro/mensagem.md`
 - **Pesquisa SEO (se existir):** `marketing/seo/01-pesquisa-demanda.md`, `06-google-ads.md` — usar como insumo
 - **Outputs vão em:** `marketing/campanhas/google-ads-<YYYY-MM-DD>/`
 
@@ -24,7 +18,7 @@ Se não houver `.business-os/` nem contexto fornecido por um plugin da empresa, 
 
 ### Passo 1 — Briefing
 
-Montar o briefing primeiro com a `.business-os/`: produto e preço (**Oferta** de `negocio.md`), público (`publico.md`), região (`RESUMO.md`), orçamento e objetivo (`momento.md`), site (**Presença** de `negocio.md`). Perguntar só o que faltar:
+Montar o briefing primeiro com a `cerebro/`: produto e preço (**Oferta** de `negocio.md`), público (`publico.md`), região (`RESUMO.md`), orçamento e objetivo (`momento.md`), site (**Presença** de `negocio.md`). Perguntar só o que faltar:
 
 1. **Produto/serviço a anunciar?** (1-3 linhas)
 2. **Quem é o público?** (perfil, dor que resolve)
@@ -92,7 +86,7 @@ Diferenciais e prova social saem só de **Provas** em `mensagem.md`. Sem prova r
 - Sem afirmações superlativas não-comprovadas ("o melhor", "número 1") sem fonte
 - Nada que cruze os **Limites** de `mensagem.md` (setores regulados, como saúde, têm regra própria de publicidade)
 
-Seguir `.business-os/mensagem.md` pra tom.
+Seguir `cerebro/mensagem.md` pra tom.
 
 Antes de gerar os CSVs, revisar headlines e descriptions seguindo o procedimento [revisar-copy](revisar-copy.md) (modo rápido), sem estourar os 30 e 90 caracteres.
 
@@ -101,7 +95,7 @@ Antes de gerar os CSVs, revisar headlines e descriptions seguindo o procedimento
 Gerar CSVs separados pra cada tipo de extensão:
 
 - **Sitelinks** (4-6): "Sobre nós", "Catálogo", "Cases", "WhatsApp", "Localização"
-- **Chamadas** (telefone): puxar de `.business-os/negocio.md`
+- **Chamadas** (telefone): puxar de `cerebro/negocio.md`
 - **Snippets estruturados:** lista de serviços, categorias de produto
 - **Preço** (se aplicável): faixas de preço dos serviços principais
 - **Promoção** (se aplicável): desconto, condição especial
@@ -164,7 +158,7 @@ Pra subir:
 Sugestão de orçamento inicial: R$<X>/dia por <Y> dias antes de avaliar.
 ```
 
-Quando a campanha for ao ar, oferecer registrar em `.business-os/historico.md` (data, orçamento, objetivo) pra comparar com os relatórios do [relatorio-ads](relatorio-ads.md).
+Quando a campanha for ao ar, oferecer registrar em `cerebro/historico.md` (data, orçamento, objetivo) pra comparar com os relatórios do [relatorio-ads](relatorio-ads.md).
 
 ---
 
@@ -176,4 +170,4 @@ Quando a campanha for ao ar, oferecer registrar em `.business-os/historico.md` (
 - **Match type:** começar com Phrase Match na maioria. Exact pra termos premium. Broad só com dados consistentes.
 - **Lista de negativas global** é obrigatória — sem ela, queima dinheiro em buscas irrelevantes.
 - **Conversões antes de tudo.** Sem conversão configurada, o Google não otimiza — relatar isso e pedir setup antes de ativar.
-- Copies seguem `.business-os/mensagem.md` estritamente. Sem jargão de marketing se o público não usa.
+- Copies seguem `cerebro/mensagem.md` estritamente. Sem jargão de marketing se o público não usa.

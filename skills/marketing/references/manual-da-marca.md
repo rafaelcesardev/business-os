@@ -4,9 +4,9 @@ Crie ou revise um manual que explique a marca e permita aplicar sua identidade v
 
 ## 1. Contexto, materiais e destino
 
-Localize a empresa pelo [contexto do negócio](../../business-os/contexto.md). Leia `RESUMO.md` primeiro; depois `negocio.md`, `publico.md`, `mensagem.md` e `marca.md` na medida necessária. Examine o manual anterior, logos, fontes e peças existentes, inclusive sua aparência, e identifique quais versões estão aprovadas. Registre a origem dos materiais e das decisões; provas e frases reais apontam para os arquivos de `fontes/`.
+Localize a empresa e siga as regras gerais do [Cérebro da empresa](../../cortex/contexto.md). Leia `RESUMO.md` primeiro; depois `negocio.md`, `publico.md`, `mensagem.md` e `marca.md` na medida necessária. Examine o manual anterior, logos, fontes e peças existentes, inclusive sua aparência, e identifique quais versões estão aprovadas. Registre a origem dos materiais e das decisões; provas e frases reais apontam para os arquivos de `fontes/`.
 
-Use os canais, o público do manual e os formatos informados pelo usuário ou pelo contexto. Pergunte somente pelo que altera a entrega e ainda não está disponível. Reutilize a pasta existente; sem uma, salve em `marketing/marca/AAAA-MM-DD-manual/`, conforme a [organização](../../business-os/organizacao.md). Não coloque a produção neste plugin, no cache instalado ou dentro de `.business-os/`.
+Use os canais, o público do manual e os formatos informados pelo usuário ou pelo contexto. Pergunte somente pelo que altera a entrega e ainda não está disponível. Reutilize a pasta existente; sem uma, salve em `marketing/marca/AAAA-MM-DD-manual/`, conforme a [organização](../../cortex/organizacao.md). Não coloque a produção neste plugin, no cache instalado ou dentro de `cerebro/`.
 
 Preserve a identidade e os textos aprovados. Criar o manual não autoriza trocar nome, redesenhar logo ou reposicionar a empresa. Havendo conflito entre materiais e contexto, apresente as versões e peça a decisão necessária, sem escolher silenciosamente qual passa a valer.
 
@@ -59,6 +59,6 @@ Preserve imagens, logos e fontes em arquivos separados e mantenha caminhos relat
 
 Entregue o PDF, a fonte editável com os recursos permitidos e instruções curtas para abrir, editar e exportar. Identifique versão e estado de aprovação, apresente uma prévia das páginas relevantes e informe as verificações realizadas e as pendências que impedem considerar o manual completo.
 
-As regras aprovadas têm sua fonte principal em `marca.md` e `mensagem.md`; detalhes extensos podem ficar em `.business-os/referencias/`, apontados por esses arquivos. Incorpore decisões novas pelo procedimento [alimentar contexto](../../business-os/alimentar.md), respeitando a autorização existente. Registre a aprovação e o caminho do manual no histórico e nas referências pertinentes, sem substituir decisões vigentes por propostas nem manter duas bases editáveis concorrentes. O documento diagramado e seus arquivos de produção permanecem na pasta de marketing.
+As regras aprovadas têm sua fonte principal em `marca.md` e `mensagem.md`; detalhes extensos podem ficar em `cerebro/referencias/`, apontados por esses arquivos. Incorpore decisões novas pelo procedimento [alimentar contexto](../../cortex/alimentar.md), respeitando a autorização existente. Registre a aprovação e o caminho do manual no histórico e nas referências pertinentes, sem substituir decisões vigentes por propostas nem manter duas bases editáveis concorrentes. O documento diagramado e seus arquivos de produção permanecem na pasta de marketing.
 
 Criar ou aprovar o manual não comprova sua aplicação nos canais. Publicar, enviar a terceiros, substituir recursos do site ou atualizar um plugin instalado são ações distintas, conforme o pedido e a autorização existente.

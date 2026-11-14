@@ -1,12 +1,12 @@
 # Posts e carrosséis
 
-Para localizar a empresa e usar contexto local ou fornecido por um plugin, siga [contexto do negócio](../../business-os/contexto.md).
+Localize a empresa e siga as regras gerais do [Cérebro da empresa](../../cortex/contexto.md).
 
 Transforme uma mensagem em uma sequência que a pessoa consiga ler e acompanhar. Use o contexto e o estilo do negócio escolhido; o método não carrega cores, personagens ou fontes de outra empresa.
 
 ## Contexto e pasta da peça
 
-Localize a pasta do negócio como em [business-os](../../business-os/SKILL.md). Leia `RESUMO.md`, `publico.md`, `mensagem.md` e `marca.md`; para oferta, leia também `negocio.md`.
+Localize a pasta do negócio como em [cortex](../../cortex/SKILL.md). Leia `RESUMO.md`, `publico.md`, `mensagem.md` e `marca.md`; para oferta, leia também `negocio.md`.
 
 Reutilize a pasta da peça quando já houver copy ou arquivos. Em um negócio novo, use `marketing/conteudo/AAAA-MM-DD-tema/`. Respeite caminhos registrados no contexto e convenções de um repositório existente. O contexto não guarda as artes geradas.
 

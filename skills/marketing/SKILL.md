@@ -1,6 +1,6 @@
 ---
 name: marketing
-description: "Ajuda uma empresa a atrair clientes e se apresentar: manual da marca, textos, posts, carrosséis, vídeos, site, presença no Google, anúncios e análise de campanhas. Use para criar ou revisar o manual da marca e materiais de divulgação, melhorar a presença digital ou entender resultados de marketing; identifica o procedimento pelo objetivo sem exigir termos técnicos."
+description: "Ajuda uma empresa a atrair clientes e se apresentar: posicionamento, manual da marca, textos, posts, carrosséis, vídeos, site, presença no Google, anúncios e análise de campanhas. Use para criar ou revisar o manual da marca e materiais de divulgação, melhorar a presença digital ou entender resultados de marketing; identifica o procedimento pelo objetivo sem exigir termos técnicos."
 ---
 
 # Marketing
@@ -9,7 +9,7 @@ Receba o objetivo em linguagem natural e entregue o trabalho solicitado. A compl
 
 ## Contexto e escopo
 
-Localize a empresa pelo [contexto compartilhado](../business-os/contexto.md). Leia `RESUMO.md` primeiro; depois apenas oferta, público, voz, identidade, referências e objetivo pertinentes. Reaproveite briefing, textos e materiais existentes; pergunte só pelo que muda a entrega.
+Localize a empresa pelo [contexto compartilhado](../cortex/contexto.md). Leia `RESUMO.md` primeiro; depois apenas oferta, público, voz, identidade, referências e objetivo pertinentes. Reaproveite briefing, textos e materiais existentes; pergunte só pelo que muda a entrega.
 
 Escolha pelo resultado pedido, sem perguntar qual procedimento o usuário quer. Texto, peça visual, campanha e publicação são entregas diferentes. Um pedido simples não inicia o fluxo completo de marketing.
 
@@ -17,6 +17,7 @@ Escolha pelo resultado pedido, sem perguntar qual procedimento o usuário quer. 
 
 | Pedido | Carregar quando necessário |
 | --- | --- |
+| Definir ou revisar o posicionamento: promessa, diferencial e o que o cliente está comprando | [Posicionamento](references/posicionamento.md) |
 | Criar ou revisar o manual da marca, de identidade visual ou de identidade verbal | [Manual da marca](references/manual-da-marca.md) |
 | Planejar o conteúdo do perfil: pilares, mistura de valor, autoridade e oferta, pauta | [Planejar conteúdo](references/planejar-conteudo.md) |
 | Pesquisar referências que funcionam (posts, carrosséis, reels, anúncios) e montar acervo para criar | [Pesquisar referências](references/pesquisar-referencias.md) |
@@ -32,8 +33,8 @@ Escolha pelo resultado pedido, sem perguntar qual procedimento o usuário quer. 
 | Criar campanha no Instagram ou Facebook | [Meta Ads](references/anuncio-meta.md) |
 | Analisar desempenho e recomendar ajustes de anúncios | [Relatório de anúncios](references/relatorio-ads.md) |
 | Responder avaliações públicas do Google | [Avaliações](references/responder-avaliacoes.md) |
-| E-mail de divulgação ou relacionamento de marketing | [E-mail compartilhado](../business-os/references/email-profissional.md) |
-| Examinar dados de marketing além do relatório de anúncios | [Análise compartilhada](../business-os/references/analisar-dados.md) |
+| E-mail de divulgação ou relacionamento de marketing | [E-mail compartilhado](../cortex/references/email-profissional.md) |
+| Examinar dados de marketing além do relatório de anúncios | [Análise compartilhada](../cortex/references/analisar-dados.md) |
 
 As referências são procedimentos, não novas skills a escolher. Leia apenas as necessárias, inclusive seus recursos específicos quando a tarefa pedir. Reutilize as mesmas regras de escrita e revisão em vez de copiá-las para cada formato.
 
@@ -49,8 +50,8 @@ As referências são procedimentos, não novas skills a escolher. Leia apenas as
 
 Use provas reais e a identidade do negócio. Separe referência observada, hipótese de teste e resultado medido. Para tendências ou capacidades atuais de plataformas, pesquise fontes reais; não invente métricas ou atribua resultados sem evidência.
 
-Quando houver arquivo a entregar, salve na pasta da peça, campanha ou site, conforme a [organização](../business-os/organizacao.md). Um pedido simples de título ou frase pode terminar no chat, respeitando a quantidade pedida, sem arquivo ou relatório não solicitado. Preserve as verificações de leitura, renderização e arquivos dos procedimentos. Informe o que foi produzido e o que foi efetivamente testado.
+Quando houver arquivo a entregar, salve na pasta da peça, campanha ou site, conforme a [organização](../cortex/organizacao.md). Um pedido simples de título ou frase pode terminar no chat, respeitando a quantidade pedida, sem arquivo ou relatório não solicitado. Preserve as verificações de leitura, renderização e arquivos dos procedimentos. Informe o que foi produzido e o que foi efetivamente testado.
 
-Para retomar ou preservar trabalho continuado, use [continuar trabalho](../business-os/references/continuar-trabalho.md). Quando o pedido incluir acompanhamento de uma campanha, site ou outra ação, use [conferir resultados](../business-os/references/conferir-resultados.md): peça entregue, publicação e resultado observado são verificações distintas. Uma revisão de prioridades do período usa [revisar o negócio](../business-os/references/revisar-negocio.md), no escopo de marketing solicitado.
+Para retomar ou preservar trabalho continuado, use [continuar trabalho](../cortex/references/continuar-trabalho.md). Quando o pedido incluir acompanhamento de uma campanha, site ou outra ação, use [conferir resultados](../cortex/references/conferir-resultados.md): peça entregue, publicação e resultado observado são verificações distintas. Uma revisão de prioridades do período usa [revisar o negócio](../cortex/references/revisar-negocio.md), no escopo de marketing solicitado.
 
-Analisar anúncios não autoriza modificar campanhas, orçamento ou conta. Preparar textos e materiais não equivale a enviar mensagens, publicar posts ou fazer deploy. Siga a autorização existente para cada ação.
+Analisar anúncios não inclui modificar campanhas, orçamento ou conta.

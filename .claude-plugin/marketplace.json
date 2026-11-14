@@ -1,15 +1,15 @@
 {
-  "name": "business-os",
-  "description": "Plugin business-os.",
+  "name": "cortex",
+  "description": "Plugin cortex.",
   "owner": {
     "name": "Rafael César",
     "url": "https://github.com/rafaelcesardev"
   },
   "plugins": [
     {
-      "name": "business-os",
+      "name": "cortex",
       "source": "./",
-      "description": "Contexto, Marketing e Comercial em três entradas para gerenciar negócios próprios e de clientes."
+      "description": "Caixa de ferramentas que cria e opera o Cérebro de uma empresa, com métodos de marketing e comercial, para negócios próprios e de clientes."
     }
   ]
 }

@@ -17,7 +17,7 @@ class AvaliarGestaoTests(unittest.TestCase):
         ]), ["modelo-ficticio"])
 
     def test_catorze_casos_ficticios(self):
-        self.assertEqual(set(cases()), set(range(1, 15)))
+        self.assertEqual(set(cases()), set(range(1, 16)))
         self.assertTrue(all(prompt.strip() for prompt, _, _ in cases().values()))
 
     def test_servico_somente_leitura_registra_tentativa_sem_mutar_estado(self):
@@ -54,5 +54,5 @@ class AvaliarGestaoTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             plugin = Path(temporary) / "plugin"
             prepare_plugin(plugin)
-            self.assertTrue((plugin / "skills/business-os/SKILL.md").exists())
+            self.assertTrue((plugin / "skills/cortex/SKILL.md").exists())
             self.assertFalse((plugin / "tests").exists())

@@ -1,18 +1,12 @@
 # Plano de site ou landing page
 
-Para localizar a empresa e usar contexto local ou fornecido por um plugin, siga [contexto do negócio](../../business-os/contexto.md).
+Localize a empresa e siga as regras gerais do [Cérebro da empresa](../../cortex/contexto.md). Leia `RESUMO.md` primeiro e depois os arquivos listados em Dependências; os caminhos de saída partem da pasta da empresa.
 
 Entrega o plano completo antes de qualquer código: o que o site precisa fazer, quais páginas e seções, os textos de cada uma e o briefing pra quem vai desenvolver. Cada seção existe por um motivo que vem do contexto do negócio.
 
-## Contexto do negócio
-
-Procurar a pasta `.business-os/` na pasta atual e, se não estiver ali, nas pastas acima. A pasta que contém `.business-os/` é a **pasta do negócio**: caminhos de saída como `marketing/...` são relativos a ela (sem `.business-os/`, à pasta atual). Ler `.business-os/RESUMO.md` primeiro e depois os arquivos listados em Dependências.
-
-Se não houver `.business-os/` nem contexto fornecido por um plugin da empresa, avisar que o `business-os` monta o contexto e seguir com o que o usuário informar. Campo vazio é lacuna: perguntar, não inventar. Nada marcado `(hipótese)` ou `(a confirmar)` vira afirmação pública.
-
 ## Dependências
 
-Todos os arquivos da `.business-os/`: um site usa o contexto inteiro.
+Todos os arquivos da `cerebro/`: um site usa o contexto inteiro.
 
 - **Pesquisa SEO (se existir):** `marketing/seo/01-pesquisa-demanda.md` e `04-otimizacao-on-page.md`
 - **Outputs vão em:** `planejamento/site-<YYYY-MM-DD>.md`
@@ -83,7 +77,7 @@ O plano serve de especificação. Se o usuário quiser construir, perguntar a st
 - Uma ação principal por página. Dois botões competindo dividem o clique.
 - Nada de lorem ipsum ou texto de exemplo no plano: lacuna marcada é mais útil.
 - Nada que cruze os **Limites** de `mensagem.md`.
-- Quando o site for ao ar, oferecer registrar em `.business-os/historico.md` e atualizar **Presença** em `negocio.md`.
+- Quando o site for ao ar, oferecer registrar em `cerebro/historico.md` e atualizar **Presença** em `negocio.md`.
 
 ## Quando o pedido inclui desenvolver o site
 

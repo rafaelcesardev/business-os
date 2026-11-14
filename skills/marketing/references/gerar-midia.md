@@ -1,10 +1,10 @@
 # Imagem, vídeo e narração
 
-Para localizar a empresa e usar contexto local ou fornecido por um plugin, siga [contexto do negócio](../../business-os/contexto.md).
+Localize a empresa e siga as regras gerais do [Cérebro da empresa](../../cortex/contexto.md).
 
 ## Contexto e destino
 
-Localize o negócio como em [business-os](../../business-os/SKILL.md). Leia `RESUMO.md`, a identidade em `marca.md` e os limites em `mensagem.md`. Use a pasta da peça que pediu a mídia; sem peça existente, use `marketing/midia/AAAA-MM-DD-tema/` na pasta do negócio.
+Localize o negócio como em [cortex](../../cortex/SKILL.md). Leia `RESUMO.md`, a identidade em `marca.md` e os limites em `mensagem.md`. Use a pasta da peça que pediu a mídia; sem peça existente, use `marketing/midia/AAAA-MM-DD-tema/` na pasta do negócio.
 
 A mídia precisa explicar a ideia. Defina o papel do objeto, pessoa ou cena antes do material, luz e efeitos. Use as referências do negócio sem assumir que outra empresa usa o mesmo estilo.
 

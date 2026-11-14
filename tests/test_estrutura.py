@@ -20,10 +20,10 @@ def local_links(path):
 
 
 class EstruturaTests(unittest.TestCase):
-    def test_apenas_tres_entradas_descobertas_inclusive_em_subpastas(self):
+    def test_apenas_quatro_entradas_descobertas_inclusive_em_subpastas(self):
         self.assertEqual(
             {p.relative_to(SKILLS).as_posix() for p in SKILLS.rglob("SKILL.md")},
-            {"business-os/SKILL.md", "marketing/SKILL.md", "comercial/SKILL.md"},
+            {"cortex/SKILL.md", "iniciar/SKILL.md", "marketing/SKILL.md", "comercial/SKILL.md"},
         )
 
     def test_links_de_recursos_nao_quebram_nem_saem_do_plugin(self):

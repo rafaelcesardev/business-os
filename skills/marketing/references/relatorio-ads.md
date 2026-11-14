@@ -1,20 +1,14 @@
 # Relatório semanal de Google Ads + Meta Ads
 
-Para localizar a empresa e usar contexto local ou fornecido por um plugin, siga [contexto do negócio](../../business-os/contexto.md).
+Localize a empresa e siga as regras gerais do [Cérebro da empresa](../../cortex/contexto.md). Leia `RESUMO.md` primeiro e depois os arquivos listados em Dependências; os caminhos de saída partem da pasta da empresa.
 
 Procedimento que transforma exports brutos das plataformas em relatório executivo que o dono entende sem precisar abrir a interface do Google ou da Meta.
 
-## Contexto do negócio
-
-Procurar a pasta `.business-os/` na pasta atual e, se não estiver ali, nas pastas acima. A pasta que contém `.business-os/` é a **pasta do negócio**: caminhos de saída como `marketing/...` são relativos a ela (sem `.business-os/`, à pasta atual). Ler `.business-os/RESUMO.md` primeiro e depois os arquivos listados em Dependências.
-
-Se não houver `.business-os/` nem contexto fornecido por um plugin da empresa, avisar que o `business-os` monta o contexto e seguir com o que o usuário informar. Campo vazio é lacuna: perguntar, não inventar. Nada marcado `(hipótese)` ou `(a confirmar)` vira afirmação pública.
-
 ## Dependências
 
-- **Contexto:** `.business-os/negocio.md`, `.business-os/historico.md` (campanhas lançadas e aprendizados)
-- **Metas:** `.business-os/momento.md` (orçamento, CPA ou custo por contato alvo). Sem meta registrada, perguntar uma vez na resposta ao usuário e oferecer guardar com o `business-os`; no relatório, registrar a meta como lacuna, sem afirmar que a pergunta foi feita
-- **Tom de voz e limites:** `.business-os/mensagem.md`
+- **Contexto:** `cerebro/negocio.md`, `cerebro/historico.md` (campanhas lançadas e aprendizados)
+- **Metas:** `cerebro/momento.md` (orçamento, CPA ou custo por contato alvo). Sem meta registrada, perguntar uma vez na resposta ao usuário e oferecer guardar com o `cortex`; no relatório, registrar a meta como lacuna, sem afirmar que a pergunta foi feita
+- **Tom de voz e limites:** `cerebro/mensagem.md`
 - **Inputs:** CSVs do Google Ads e/ou Meta Ads Manager. Print também aceito (transcrever)
 - **Histórico:** `marketing/campanhas/relatorios/` (criar se não existir)
 
@@ -44,7 +38,7 @@ Adapte a profundidade ao pedido. Os passos abaixo orientam um relatório complet
 
 Use os campos disponíveis, mesmo quando o usuário fornecer um resumo em vez das colunas da plataforma. Identifique o evento medido: lead, mensagem, agendamento ou venda. Calcule custo por lead quando houver leads; CPA de cliente e retorno sobre vendas exigem dados de aquisição ou receita. Vendas não informadas são desconhecidas, não zero. Não some eventos diferentes nem trate a soma dos canais como clientes únicos sem deduplicação. Sem dados de resultado, avise e analise somente o tráfego.
 
-Preserve as definições na interpretação e nas recomendações conforme a [análise compartilhada](../../business-os/references/analisar-dados.md): cliques não comprovam contatos recebidos, e a queda depois do clique não identifica sozinha qual parte causou o problema.
+Preserve as definições na interpretação e nas recomendações conforme a [análise compartilhada](../../cortex/references/analisar-dados.md): cliques não comprovam contatos recebidos, e a queda depois do clique não identifica sozinha qual parte causou o problema.
 
 ### Passo 2 — Comparar com a semana anterior
 
@@ -163,7 +157,7 @@ Mostrar o resumo executivo direto no chat (Passos 3 + 5 + 6) e apontar pro arqui
 
 Se sim, chamar `email-profissional` com o resumo executivo + link/anexo.
 
-Se o relatório confirmou um aprendizado que se repete (criativo, público ou palavra-chave que funciona ou não funciona pra esse negócio), oferecer registrar em **O que já sabemos** de `.business-os/historico.md`.
+Se o relatório confirmou um aprendizado que se repete (criativo, público ou palavra-chave que funciona ou não funciona pra esse negócio), oferecer registrar em **O que já sabemos** de `cerebro/historico.md`.
 
 ---
 
@@ -173,6 +167,6 @@ Se o relatório confirmou um aprendizado que se repete (criativo, público ou pa
 - **Comparação é o que importa.** Número solto ("R$ 1.200 essa semana") não significa nada sem o comparativo.
 - **Alertas em ordem.** Vermelho primeiro, amarelo depois, verde por último.
 - **Recomendações concretas.** "Pausar Grupo X" > "Otimizar campanhas". Nome da campanha, valor, motivo.
-- **Linguagem do dono.** Seguir `.business-os/mensagem.md`. CPM, CTR, CPA são OK se o dono já entende; se não, traduzir pelo evento medido ("custo por mil exibições", "% das exibições que viraram clique", "quanto custou cada contato"). Só usar "cliente" quando houver aquisição medida.
+- **Linguagem do dono.** Seguir `cerebro/mensagem.md`. CPM, CTR, CPA são OK se o dono já entende; se não, traduzir pelo evento medido ("custo por mil exibições", "% das exibições que viraram clique", "quanto custou cada contato"). Só usar "cliente" quando houver aquisição medida.
 - **Alertas são hipóteses de diagnóstico.** Frequência e taxas isoladas não provam saturação nem a causa da queda. Interprete os limiares da tabela com o objetivo, período, tamanho do público, volume e histórico disponíveis; sem contexto suficiente, registre a limitação.
 - **Quando reportar perda:** descreva o dado observado sem inventar a conclusão. "A campanha X gastou R$ 200 e não registrou leads" só cabe se houver medição de leads; ausência de dados de vendas não prova que não houve venda.

@@ -1,6 +1,6 @@
 # Planejar conteúdo do perfil
 
-Para localizar a empresa e usar contexto local ou fornecido por um plugin, siga [contexto do negócio](../../business-os/contexto.md).
+Localize a empresa e siga as regras gerais do [Cérebro da empresa](../../cortex/contexto.md).
 
 Um perfil que só vende não ganha seguidores. A maior parte do conteúdo deve ajudar o público mesmo que ele nunca compre; a confiança criada é o que faz a oferta funcionar quando aparece.
 

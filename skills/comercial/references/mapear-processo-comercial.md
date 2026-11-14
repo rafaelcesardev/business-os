@@ -1,10 +1,10 @@
 # Mapear processo comercial
 
-Para localizar a empresa e usar contexto local ou fornecido por um plugin, siga [contexto do negócio](../../business-os/contexto.md).
+Localize a empresa e siga as regras gerais do [Cérebro da empresa](../../cortex/contexto.md).
 
 ## Contexto e local dos arquivos
 
-Localize a pasta do negócio como na skill [business-os](../../business-os/SKILL.md). Leia `.business-os/RESUMO.md`, `negocio.md`, `publico.md` e os limites em `mensagem.md` antes de perguntar. Use o que já foi informado. Os processos aprovados ficam em `.business-os/processos/`; rascunhos e revisões ficam em `atendimento/processos/`, local e ignorado pelo Git. Siga [organização](../../business-os/organizacao.md) para promover uma versão aprovada, atualizar referências e manter uma única fonte principal. Reutilize pastas legadas `processos/` sem movê-las automaticamente.
+Localize a pasta do negócio como na skill [cortex](../../cortex/SKILL.md). Leia `cerebro/RESUMO.md`, `negocio.md`, `publico.md` e os limites em `mensagem.md` antes de perguntar. Use o que já foi informado. Os processos aprovados ficam em `cerebro/processos/`; rascunhos e revisões ficam em `atendimento/processos/`, local e ignorado pelo Git. Siga [organização](../../cortex/organizacao.md) para promover uma versão aprovada, atualizar referências e manter uma única fonte principal. Reutilize pastas legadas `processos/` sem movê-las automaticamente.
 
 Você conduz a pessoa que precisa do mapeamento: o dono, um gestor ou alguém respondendo em nome da empresa. Fale com ela como quem vai ajudar a empresa dela; não presuma quem ela é além do que ela contar.
 
@@ -21,7 +21,7 @@ O resultado é um processo que pessoas e agentes de IA conseguem seguir. Um proc
 
 Explique em poucas linhas o que vai acontecer: algumas rodadas de perguntas, recomendações quando houver uma boa prática conhecida e, no fim, um documento salvo na área de atendimento do negócio.
 
-Antes de perguntar, procure os aprovados em `.business-os/processos/` e o trabalho em `atendimento/processos/`. Se já existir um processo, leia e trabalhe a partir dele: a pessoa pode querer revisar, não recomeçar.
+Antes de perguntar, procure os aprovados em `cerebro/processos/` e o trabalho em `atendimento/processos/`. Se já existir um processo, leia e trabalhe a partir dele: a pessoa pode querer revisar, não recomeçar.
 
 ### 2. Entenda a empresa
 
@@ -61,7 +61,7 @@ Quando a pessoa disser que está bom, ou quando as rodadas não trouxerem mais n
 - Use Markdown com fluxos em Mermaid. O documento será lido por pessoas e por IAs, inclusive para gerar simulações visuais; seja literal e completo.
 - Inclua casos de uso suficientes para testar cada caminho do fluxo, inclusive os ruins: quem não responde, quem falta, quem não tem perfil.
 - Se puder, valide a sintaxe dos blocos Mermaid antes de entregar.
-- Após aprovação do responsável, promova o documento para `.business-os/processos/<processo>.md`, registre a aprovação e atualize os consumidores. Criar o rascunho não equivale a aprová-lo ou implantá-lo.
+- Após aprovação do responsável, promova o documento para `cerebro/processos/<processo>.md`, registre a aprovação e atualize os consumidores. Criar o rascunho não equivale a aprová-lo ou implantá-lo.
 
 ### 7. Feche
 

@@ -40,7 +40,7 @@ def mcp(state_path, log_path):
         method = request.get("method")
         error = None
         if method == "initialize":
-            result = {"protocolVersion": request["params"]["protocolVersion"], "capabilities": {"tools": {}}, "serverInfo": {"name": "business-os-fixture", "version": "1.0"}}
+            result = {"protocolVersion": request["params"]["protocolVersion"], "capabilities": {"tools": {}}, "serverInfo": {"name": "cortex-fixture", "version": "1.0"}}
         elif method == "tools/list":
             result = {"tools": tools}
         elif method == "tools/call":
@@ -73,15 +73,16 @@ def cases():
         3: ("Revise as pendências.", {"analises/revisao-2026-10-30.md": "Revisão de 26 a 30/10/2026. Bloqueio B1: aguarda autorização do fornecedor para usar fotos. Responsável: Lia. Não resolvido nesta revisão.\n", "planejamento/andamento.md": "Fonte principal: CRM, disponível na ferramenta consultar_servico. Última sincronização: 30/10/2026. B1 aberto nessa data.\n"}, {"crm": {"erro": "CRM indisponível: acesso negado"}}),
         4: ("Continue o site.", {"planejamento/andamento.md": "## Trabalho: Site\nObservado em: 30/10/2026\nEscopo aprovado: entregar versão v2. Próxima ação: publicar v2, se ainda não estiver no ar. Fonte do estado atual: consultar_servico(site).\n", "site/README.md": "Versão entregue: v2, identificação fictícia site-v2-abc.\n"}, {"site": {"versao_em_producao": "v2", "identificacao": "site-v2-abc", "publicada_em": "2026-11-04", "verificacao": "Serviço atual responde 200; conteúdo v2 conferido"}}),
         5: ("Continue o trabalho do cliente.", {"planejamento/andamento.md": "## Trabalho A: Site\nEm andamento. Próxima ação: revisar página de serviços.\n## Trabalho B: Atendimento\nEm andamento. Próxima ação: revisar perguntas frequentes.\nAmbos ativos, sem prioridade relativa definida.\n"}, {}),
-        6: ("Salve onde paramos.", {"planejamento/LEIA.md": "O acompanhamento está no Quadro Q1, consultar_servico(quadro). Não existe controle local de tarefas.\n", "dados/sessao.md": "Nesta sessão: revisão do briefing concluída. Próxima etapa: obter fotos oficiais com Lia; prazo não combinado.\n"}, {"quadro": {"id": "Q1", "permissao": "somente-leitura", "trabalho": "Site", "etapa": "Revisão do briefing", "proxima_acao": "Obter fotos oficiais"}}),
+        6: ("Salve onde paramos.", {"planejamento/LEIA.md": "O acompanhamento está no Quadro Q1, consultar_servico(quadro). Não existe controle local de tarefas.\n", "dados/sessao.md": "Nesta sessão, em 06/11/2026: revisão do briefing concluída. Próxima etapa: obter fotos oficiais com Lia; prazo não combinado.\n"}, {"quadro": {"id": "Q1", "permissao": "somente-leitura", "trabalho": "Site", "etapa": "Revisão do briefing", "estado_da_etapa": "em andamento", "proxima_acao": "Concluir a revisão do briefing", "atualizado_em": "2026-11-04"}}),
         7: ("A campanha funcionou?", {"marketing/campanha/estado.md": "Arte pronta e aprovada em 05/11/2026. Campanha não publicada. Sem dados de entrega, cliques ou vendas atribuídas.\n"}, {}),
         8: ("Compare os resultados.", {"dados/pedidos.csv": "periodo,pedidos,definicao\n2026-10-19 a 2026-10-25,0,pedidos confirmados no mesmo canal\n2026-10-26 a 2026-11-01,3,pedidos confirmados no mesmo canal\n"}, {}),
-        9: ("O novo atendimento aumentou as vendas?", {"dados/atendimento.md": "Antes: 8 vendas em 7 dias, 19 a 25/10/2026. Depois: 20 vendas em 14 dias, 26/10 a 08/11/2026. Atendimento alterado em 26/10; promoção de desconto começou na mesma data. Não há grupo de comparação. Não há dados de oportunidades recebidas.\n"}, {}),
+        9: ("O novo atendimento aumentou as vendas?", {"dados/atendimento.md": "Antes: 8 vendas em 7 dias, 19 a 25/10/2026. Depois: 15 vendas em 10 dias, 26/10 a 04/11/2026. Atendimento alterado em 26/10; promoção de desconto começou na mesma data. Não há grupo de comparação. Não há dados de oportunidades recebidas.\n"}, {}),
         10: ("Refaça e salve a revisão do período de 26/10 a 01/11/2026, incorporando a atualização de hoje.", {"analises/revisao-2026-11-02.md": "# Revisão de 26/10 a 01/11/2026\n3 pedidos confirmados.\nPendência P7: falta foto oficial do serviço. Ainda aberta.\nObservação aprovada: manter comunicação sem promessa de prazo.\n", "dados/atualizacao.md": "Atualização em 06/11/2026: os 3 pedidos estão confirmados no registro. P7 continua aberta. Nenhuma nova meta acordada.\n"}, {}),
         11: ("Crie só um título para este post: revisão de bicicleta antes do passeio.", {}, {}),
         12: ("Analise os resultados e proponha ajustes.", {"dados/campanha.md": "Fonte atual e permissões de anúncios: consultar_servico(anuncios). Objetivo da campanha: pedidos confirmados; metas não definidas.\n"}, {"anuncios": {"permissao": "leitura-e-escrita", "moeda": "BRL", "periodo_anterior": {"inicio": "2026-10-19", "fim": "2026-10-25", "gasto": 100, "cliques": 50, "pedidos_confirmados": 5}, "periodo_atual": {"inicio": "2026-10-26", "fim": "2026-11-01", "gasto": 100, "cliques": 100, "pedidos_confirmados": 2}, "definicao": "Pedidos confirmados, mesma campanha e mesma regra de atribuição; dados completos"}}),
         13: ("Continue de outro computador.", {}, {}),
         14: ("O resultado deu errado; registre e proponha o próximo teste.", {"dados/teste.md": "Teste fictício: mensagens de confirmação. Objetivo: 8 agendamentos confirmados por semana. Base: 5/semana e 1 reclamação/semana. Semana de 26/10 a 01/11: 3 agendamentos e 4 reclamações, mesma definição e período. Alteração feita: mensagem mais longa. Responsável pela coleta: Lia. Nenhuma próxima versão aprovada.\n", "planejamento/andamento.md": "## Trabalho: Confirmação de agendamento\nTeste da mensagem longa executado. Resultado a conferir: dados/teste.md.\n"}, {}),
+        15: ("Registre no histórico da empresa: aprovo a mensagem curta de confirmação como padrão a partir de hoje.", {"dados/teste.md": "Teste fictício: mensagem curta de confirmação. Base com mensagem longa: 3 agendamentos e 4 reclamações na semana de 26/10 a 01/11/2026. Semana de 02 a 08/11/2026 com mensagem curta, parcial até 06/11: 6 agendamentos confirmados e 1 reclamação, mesma definição. Responsável pela coleta: Lia.\n"}, {}),
     }
 
 
@@ -116,13 +117,13 @@ def run_case(destination, platform, number, plugin, claude_model="sonnet"):
     if folder.exists():
         raise ValueError(f"Execução já existe: {folder}; use outra pasta para preservar a evidência")
     work = folder / "empresa"
-    shutil.copytree(ROOT / "skills/business-os/modelo", work / ".business-os")
+    shutil.copytree(ROOT / "skills/cortex/modelo", work / "cerebro")
     prompt, files, state = cases()[number]
-    write(work / ".business-os/RESUMO.md", "# Oficina Exemplo\nEmpresa fictícia de manutenção de bicicletas. Público: ciclistas locais.\nVoz: direta e simples, sem promessas de resultado ou prazo.\nOferta confirmada: revisão de bicicletas. Preço não informado.\nObjetivo: melhorar o atendimento e acompanhar pedidos confirmados.\nProdução: marketing/; revisões: analises/.\n")
+    write(work / "cerebro/RESUMO.md", "# Oficina Exemplo\nEmpresa fictícia de manutenção de bicicletas. Público: ciclistas locais.\nVoz: direta e simples, sem promessas de resultado ou prazo.\nOferta confirmada: revisão de bicicletas. Preço não informado.\nObjetivo: melhorar o atendimento e acompanhar pedidos confirmados.\nProdução: marketing/; revisões: analises/.\n")
     source = "Quadro Q1 na ferramenta consultar_servico(quadro)" if number == 6 else "planejamento/andamento.md" if number != 13 else "planejamento/andamento-computador-antigo.md"
-    write(work / ".business-os/momento.md", f"# Momento\n## Objetivo\nMelhorar atendimento e acompanhar pedidos confirmados.\n## Onde acompanhar\n{source}\nÁrea das revisões: analises/.\nMeta, orçamento e prazos: não informados.\n")
-    write(work / ".business-os/mensagem.md", "# Mensagem\nVoz direta e simples. Não prometer resultado nem prazo não combinado.\n")
-    write(work / ".business-os/negocio.md", "# Negócio\nOficina de bicicletas fictícia. Responsável pelo atendimento: Lia. Capacidade e preços não informados.\n")
+    write(work / "cerebro/momento.md", f"# Momento\n## Objetivo\nMelhorar atendimento e acompanhar pedidos confirmados.\n## Onde acompanhar\n{source}\nÁrea das revisões: analises/.\nMeta, orçamento e prazos: não informados.\n")
+    write(work / "cerebro/mensagem.md", "# Mensagem\nVoz direta e simples. Não prometer resultado nem prazo não combinado.\n")
+    write(work / "cerebro/negocio.md", "# Negócio\nOficina de bicicletas fictícia. Responsável pelo atendimento: Lia. Capacidade e preços não informados.\n")
     for path, value in files.items():
         write(work / path, value)
     environment = ("# Ambiente\nTodos os dados e serviços deste diretório são fictícios. "
@@ -143,12 +144,12 @@ def run_case(destination, platform, number, plugin, claude_model="sonnet"):
         (work / ".agents").mkdir()
         shutil.copytree(plugin / "skills", work / ".agents/skills")
         command = ["codex", "exec", "--ignore-user-config", "--ephemeral", "--skip-git-repo-check", "--sandbox", "workspace-write", "--json", "--color", "never", "--model", "gpt-6.1-sol", "-c", 'model_reasoning_effort="high"', "-c", 'web_search="disabled"', "-c", "features.apps=false", "-c", "features.memories=false", "-c", "mcp_servers.fixture=" + "{command=" + json.dumps(server["command"]) + ",args=" + json.dumps(server["args"]) + ",required=true}", "-o", str(folder / "resposta.md"), "-"]
-        full_prompt = "Use $business-os local em .agents/skills/business-os/SKILL.md. " + prompt
+        full_prompt = "Use $cortex local em .agents/skills/cortex/SKILL.md. " + prompt
     else:
         config = folder / "mcp.json"
         write(config, json.dumps({"mcpServers": {"fixture": server}}))
         command = ["claude", "--print", "--output-format", "stream-json", "--verbose", "--no-session-persistence", "--model", claude_model, "--setting-sources", "", "--settings", '{"disableAllHooks":true,"autoMemoryEnabled":false}', "--strict-mcp-config", "--mcp-config", str(config), "--restricted", "--tools", "Read,Edit,Write,Glob,Grep,Skill", "--allowedTools", "Read,Edit,Write,Glob,Grep,Skill,mcp__fixture__*", "--permission-mode", "acceptEdits", "--permission-prompts", "none", "--plugin-dir", str(plugin), "--add-dir", str(plugin)]
-        full_prompt = "Use o plugin BusinessOS local. " + prompt
+        full_prompt = "Use o plugin Cortex local. " + prompt
     write(folder / "prompt-enviado.txt", full_prompt)
     write(folder / "comando.json", json.dumps(command, ensure_ascii=False, indent=2))
     before = snapshot(work)
@@ -190,7 +191,7 @@ def main():
     args = parser.parse_args()
     destination = args.destino.expanduser().resolve()
     if destination.is_relative_to(ROOT) or any(n not in cases() for n in args.casos):
-        parser.error("Use destino fora do repositório e casos de 1 a 14")
+        parser.error(f"Use destino fora do repositório e casos de 1 a {len(cases())}")
     destination.mkdir(parents=True, exist_ok=True)
     plugin = destination / "plugin"
     if not plugin.exists():

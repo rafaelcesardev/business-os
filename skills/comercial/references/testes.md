@@ -4,7 +4,7 @@ Um prompt só está pronto quando passou numa bateria de cenários, com cada cen
 
 ## Monte os cenários
 
-1. **Um por caso de uso do processo** (fonte aprovada em `.business-os/processos/`, ou rascunho identificado em `atendimento/processos/`, seção "Casos de uso").
+1. **Um por caso de uso do processo** (fonte aprovada em `cerebro/processos/`, ou rascunho identificado em `atendimento/processos/`, seção "Casos de uso").
 2. **Os casos difíceis** de [casos-dificeis.md](casos-dificeis.md) que se aplicam ao negócio. Os de limites e segurança (19 a 30) entram sempre.
 3. **Um por falha real**, no modo revisar: a mensagem exata do cliente na conversa em que o agente errou. Esses cenários ficam na bateria para sempre, como teste de regressão.
 

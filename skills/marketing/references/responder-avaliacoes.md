@@ -1,17 +1,11 @@
 # Respostas pras avaliações do Google
 
-Para localizar a empresa e usar contexto local ou fornecido por um plugin, siga [contexto do negócio](../../business-os/contexto.md).
-
-## Contexto do negócio
-
-Procurar a pasta `.business-os/` na pasta atual e, se não estiver ali, nas pastas acima. A pasta que contém `.business-os/` é a **pasta do negócio**: caminhos de saída como `marketing/...` são relativos a ela (sem `.business-os/`, à pasta atual). Ler `.business-os/RESUMO.md` primeiro e depois os arquivos listados em Dependências.
-
-Se não houver `.business-os/` nem contexto fornecido por um plugin da empresa, avisar que o `business-os` monta o contexto e seguir com o que o usuário informar. Campo vazio é lacuna: perguntar, não inventar. Nada marcado `(hipótese)` ou `(a confirmar)` vira afirmação pública.
+Localize a empresa e siga as regras gerais do [Cérebro da empresa](../../cortex/contexto.md). Leia `RESUMO.md` primeiro e depois os arquivos listados em Dependências; os caminhos de saída partem da pasta da empresa.
 
 ## Dependências
 
-- **Tom de voz e limites:** `.business-os/mensagem.md`
-- **Negócio e oferta:** `.business-os/negocio.md`
+- **Tom de voz e limites:** `cerebro/mensagem.md`
+- **Negócio e oferta:** `cerebro/negocio.md`
 
 ---
 
@@ -25,7 +19,7 @@ Respostas são **curtas** (1 a 2 frases), **pessoais** e **concretas**. Nada de 
 2. **Sempre agradecer.** Variar: "Obrigado", "Muito obrigado", "Que bom", "Valeu" — pra não parecer robô.
 3. **Frase concreta, não genérica.** Puxar algo específico da review ou algo da empresa (produto, processo, cuidado, tradição). Evitar "seu feedback é muito importante pra nós", "estamos sempre à disposição", "agradecemos a preferência".
 4. **Emoji no final — opcional, na maioria das vezes sim.** Usar em reviews calorosas/elogiosas. Pular em reviews formais, curtas secas, ou críticas. Nunca mais de 1 emoji.
-5. **Tom e limites:** seguir Voz e Limites de `.business-os/mensagem.md` (em saúde, por exemplo, não confirmar que a pessoa é paciente nem citar o procedimento dela). Sem jargão de marketing. Sem "premium", "qualidade ímpar", "experiência diferenciada".
+5. **Tom e limites:** seguir Voz e Limites de `cerebro/mensagem.md` (em saúde, por exemplo, não confirmar que a pessoa é paciente nem citar o procedimento dela). Sem jargão de marketing. Sem "premium", "qualidade ímpar", "experiência diferenciada".
 
 ### Exemplos genéricos (adaptar ao negócio)
 
@@ -40,7 +34,7 @@ Respostas são **curtas** (1 a 2 frases), **pessoais** e **concretas**. Nada de 
 
 - **Calorosos (elogio):** 🤩 😊 🙏 ❤️
 - **Específicos do nicho:** depende do negócio — comida 🔥👏🥩, beleza 💅✨ (com cuidado), serviços 👏🙌
-- **Evitar (tom de marketing genérico):** ✨ 🎉 💯 🚀 (a menos que combine com o tom da marca em `.business-os/mensagem.md`)
+- **Evitar (tom de marketing genérico):** ✨ 🎉 💯 🚀 (a menos que combine com o tom da marca em `cerebro/mensagem.md`)
 
 ---
 
@@ -86,7 +80,7 @@ Se o usuário pedir pra guardar, salvar em `marketing/avaliacoes-google/YYYY-MM-
 
 ### Passo 5 — Levar pro contexto
 
-Avaliação é fonte de primeira: elogio específico vira **Prova** (depoimento) e o jeito como o cliente escreve vira **Frase real**. Oferecer guardar as avaliações com o `business-os`.
+Avaliação é fonte de primeira: elogio específico vira **Prova** (depoimento) e o jeito como o cliente escreve vira **Frase real**. Oferecer guardar as avaliações com o `cortex`.
 
 ---
 

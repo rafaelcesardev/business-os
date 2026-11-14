@@ -1,21 +1,15 @@
 # Roteiro de vídeo curto
 
-Para localizar a empresa e usar contexto local ou fornecido por um plugin, siga [contexto do negócio](../../business-os/contexto.md).
+Localize a empresa e siga as regras gerais do [Cérebro da empresa](../../cortex/contexto.md). Leia `RESUMO.md` primeiro e depois os arquivos listados em Dependências; os caminhos de saída partem da pasta da empresa.
 
 Entrega roteiros prontos pra gravar: cada cena diz o que aparece, o que se fala e o que vai escrito na tela. O roteiro parte das dores e das palavras do público, não de trends genéricas.
 
-## Contexto do negócio
-
-Procurar a pasta `.business-os/` na pasta atual e, se não estiver ali, nas pastas acima. A pasta que contém `.business-os/` é a **pasta do negócio**: caminhos de saída como `marketing/...` são relativos a ela (sem `.business-os/`, à pasta atual). Ler `.business-os/RESUMO.md` primeiro e depois os arquivos listados em Dependências.
-
-Se não houver `.business-os/` nem contexto fornecido por um plugin da empresa, avisar que o `business-os` monta o contexto e seguir com o que o usuário informar. Campo vazio é lacuna: perguntar, não inventar. Nada marcado `(hipótese)` ou `(a confirmar)` vira afirmação pública.
-
 ## Dependências
 
-- **Público:** `.business-os/publico.md` (dores, objeções, frases reais)
-- **Tom de voz, provas e limites:** `.business-os/mensagem.md`
-- **Estilo visual:** `.business-os/marca.md`
-- **Objetivo atual:** `.business-os/momento.md`
+- **Público:** `cerebro/publico.md` (dores, objeções, frases reais)
+- **Tom de voz, provas e limites:** `cerebro/mensagem.md`
+- **Estilo visual:** `cerebro/marca.md`
+- **Objetivo atual:** `cerebro/momento.md`
 - **Outputs vão em:** `marketing/conteudo/reels-<tema>-<YYYY-MM-DD>/`
 
 ---

@@ -1,6 +1,6 @@
 # Modelo do documento
 
-Um documento por processo, com nome em kebab-case. O rascunho fica em `atendimento/processos/<processo>.md`; a versão aprovada passa a ter sua fonte principal em `.business-os/processos/<processo>.md`, conforme a [organização do negócio](../../business-os/organizacao.md). Registre quem aprovou e quando; não trate a geração do rascunho como aprovação.
+Um documento por processo, com nome em kebab-case. O rascunho fica em `atendimento/processos/<processo>.md`; a versão aprovada passa a ter sua fonte principal em `cerebro/processos/<processo>.md`, conforme a [organização do negócio](../../cortex/organizacao.md). Registre quem aprovou e quando; não trate a geração do rascunho como aprovação.
 
 O documento é lido por pessoas e por IAs, inclusive para configurar agentes e gerar simulações visuais. Por isso:
 

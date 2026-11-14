@@ -1,24 +1,18 @@
 # Campanha de Meta Ads
 
-Para localizar a empresa e usar contexto local ou fornecido por um plugin, siga [contexto do negócio](../../business-os/contexto.md).
+Localize a empresa e siga as regras gerais do [Cérebro da empresa](../../cortex/contexto.md). Leia `RESUMO.md` primeiro e depois os arquivos listados em Dependências; os caminhos de saída partem da pasta da empresa.
 
 Entrega a campanha pronta pra subir no Gerenciador de Anúncios: estrutura, públicos, criativos com texto completo e checklist de medição. Cada criativo testa um ângulo diferente tirado do contexto do negócio.
 
-## Contexto do negócio
-
-Procurar a pasta `.business-os/` na pasta atual e, se não estiver ali, nas pastas acima. A pasta que contém `.business-os/` é a **pasta do negócio**: caminhos de saída como `marketing/...` são relativos a ela (sem `.business-os/`, à pasta atual). Ler `.business-os/RESUMO.md` primeiro e depois os arquivos listados em Dependências.
-
-Se não houver `.business-os/` nem contexto fornecido por um plugin da empresa, avisar que o `business-os` monta o contexto e seguir com o que o usuário informar. Campo vazio é lacuna: perguntar, não inventar. Nada marcado `(hipótese)` ou `(a confirmar)` vira afirmação pública.
-
 ## Dependências
 
-- **Público:** `.business-os/publico.md` (dores, objeções, frases reais, onde está)
-- **Negócio e oferta:** `.business-os/negocio.md`
-- **Tom de voz, provas e limites:** `.business-os/mensagem.md`
-- **Orçamento e objetivo:** `.business-os/momento.md`
-- **Visual:** `.business-os/marca.md`
+- **Público:** `cerebro/publico.md` (dores, objeções, frases reais, onde está)
+- **Negócio e oferta:** `cerebro/negocio.md`
+- **Tom de voz, provas e limites:** `cerebro/mensagem.md`
+- **Orçamento e objetivo:** `cerebro/momento.md`
+- **Visual:** `cerebro/marca.md`
 - **Modelos de imagem:** [imagem-estatica.md](imagem-estatica.md)
-- **Aprendizados anteriores:** `.business-os/historico.md`
+- **Aprendizados anteriores:** `cerebro/historico.md`
 - **Outputs vão em:** `marketing/campanhas/meta-ads-<YYYY-MM-DD>/`
 
 ---
@@ -102,7 +96,7 @@ marketing/campanhas/meta-ads-<YYYY-MM-DD>/
   criativos.md   ← todos os criativos com texto completo
 ```
 
-Mostrar no chat a estrutura e os ângulos. Subir tudo pausado; o usuário ativa depois de revisar. Quando for ao ar, oferecer registrar em `.business-os/historico.md` pra comparar com o [relatorio-ads](relatorio-ads.md).
+Mostrar no chat a estrutura e os ângulos. Subir tudo pausado; o usuário ativa depois de revisar. Quando for ao ar, oferecer registrar em `cerebro/historico.md` pra comparar com o [relatorio-ads](relatorio-ads.md).
 
 ---
 

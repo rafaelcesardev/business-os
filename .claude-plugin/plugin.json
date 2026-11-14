@@ -1,13 +1,13 @@
 {
-  "name": "business-os",
-  "displayName": "BusinessOS",
-  "version": "0.9.1",
-  "description": "Contexto, Marketing e Comercial em três entradas para gerenciar negócios próprios e de clientes.",
+  "name": "cortex",
+  "displayName": "Cortex",
+  "version": "1.0.0",
+  "description": "Caixa de ferramentas que cria e opera o Cérebro de uma empresa, com métodos de marketing e comercial, para negócios próprios e de clientes.",
   "author": {
     "name": "Rafael César",
     "url": "https://github.com/rafaelcesardev"
   },
-  "repository": "https://github.com/rafaelcesardev/business-os",
+  "repository": "https://github.com/rafaelcesardev/cortex",
   "license": "MIT",
-  "icon": "./skills/business-os/assets/logo.svg"
+  "icon": "./skills/cortex/assets/logo.svg"
 }
